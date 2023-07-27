@@ -1,0 +1,43 @@
+/* styles.css or your custom CSS file */
+
+/* Set the background color of the whole page to grey */
+body {
+  background-color: #f2f2f2; /* Grey color */
+  padding-top: 70px; /* Adjust the value to match the height of your navbar */
+}
+
+
+
+/* Add margin between tags */
+.tags span {
+  margin-right: 5px; /* Adjust the value to control the spacing between tags */
+}
+
+/* Apply grey background to tags */
+.badge-secondary {
+  background-color: #ccc;
+}
+
+.search-bar {
+  margin-top: 16px;
+  text-align: center; /* Center the input element horizontally */
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 180px;
+  padding: 12px; /* Adjust the padding to make the search bar taller */
+  border-radius: 4px;
+  font-size: 16px; /* Adjust the font size to make the text larger */
+  outline: none !important; /* Remove the outline for the input */
+}
+
+.card-content {
+  flex-grow: 1; /* Allow the card content to expand and take remaining height */
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Customize the shadow values as desired */
+}

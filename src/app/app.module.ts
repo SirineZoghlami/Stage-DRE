@@ -9,7 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 import { RouterModule } from '@angular/router'; // Import RouterModule
-import { AppRoutingModule } from './app-routing.module'; // If you have a separate routing module
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -17,6 +19,8 @@ import { AppRoutingModule } from './app-routing.module'; // If you have a separa
   declarations: [
     AppComponent,
     FormComponentComponent,
+    HomeComponent,
+    NavbarComponent,
    // NavbarComponent
   ],
   imports: [
