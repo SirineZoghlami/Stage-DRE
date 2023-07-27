@@ -4,3 +4,15 @@
 }
 
 
+.navbar {
+  /* Set the height and other styles for the navbar */
+  height: 60px; /* Adjust the height as needed */
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties as needed */
+}
+/* Custom CSS */
+body {
+  padding-top: 80px; /* Adjust the spacing between the top of the page and the navbar */
+}

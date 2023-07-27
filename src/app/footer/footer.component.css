@@ -1,0 +1,4 @@
+/* Custom CSS */
+.text-center.mb-5 a:not(:last-child) {
+  margin-right: 1rem; /* Adjust the value to control the spacing between the icons */
+}

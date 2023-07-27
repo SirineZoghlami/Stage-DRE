@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -21,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormComponentComponent,
     HomeComponent,
     NavbarComponent,
+    FooterComponent,
    // NavbarComponent
   ],
   imports: [
