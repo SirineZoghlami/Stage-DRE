@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.logo{
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.page-content{
+    background-color: white;
+    width: 80%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+
+}
+.entreprise,
+.address,
+.contact
+{
+    margin-left: 30px;
+    margin-bottom: 50px;
+
+}
+.contact h5
+{
+color:  #121113;
+font-size: 15px;
+
+}
+
+.entreprise h2,
+.address h2,
+.contact h2
+{
+color: rgb(102, 28, 102);
+font-size: 20px;
+}
+.form-group1,
+.form-group2
+{   margin-left: 20px;
+    display: grid;
+    grid-template-columns: 500px 200px 200px;
+    grid-template-rows: 70px;
+    margin-top: 20px;
+}
+
+.form-group1 input,
+.form-group2 input,
+.form-group3 input
+{
+padding-right: 100px;
+border: 1px solid transparent;
+background: transparent;
+appearance: unset;
+-moz-appearance: unset;
+-webkit-appearance: unset;
+-o-appearance: unset;
+-ms-appearance: unset;
+outline: none;
+-moz-outline: none;
+-webkit-outline: none;
+-o-outline: none;
+-ms-outline: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+}
+.form-group1 input,
+.form-group2 input,
+.form-group3 input{
+    border-bottom: 1px solid #ccc;
+}
+.form-group1 input :focus,
+.form-group2 input:focus{
+    border-bottom: 1px solid #ccc;
+}
+.form-group2 #adcom,
+.form-group2 #region
+{
+
+width: 400px;
+}
+
+.form-group3 input
+{
+width: 600px;
+}
+.form-group3 ::placeholder,
+.form-group2 ::placeholder,
+.form-group1 ::placeholder
+{
+color: #3c4674;
+font-size: 12px;
+}
+#secteur
+{
+width: 290px;
+padding-bottom: 8px;
+margin-left: 20px;
+color: #3c4674;
+font-size: 12px;
+}
+
+.form-group3{
+margin-top: 20px;
+margin-left: 20px;
+
+}
+#btn{
+margin-left: 440px;
+border-radius: 15px;
+background-color:#9053c7;
+color: white;
+    border: none;
+	height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color:#333333;
+  }

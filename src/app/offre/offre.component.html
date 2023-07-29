@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+    <div class="a">
+        <div class="row1">
+            <div class="job">
+                <h5>Selectionner emploi:</h5>
+                <ng-select [items]="jobTitles" placeholder="Selectionner emploi" appendTo="body" [(ngModel)]="selected" [virtualScroll]="true" id="jobSelect">
+                <ng-option *ngFor="let job of jobTitles" [value]="job">{{ job }}</ng-option>
+                </ng-select>
+            </div>
+
+            <div class="titre">
+                <h5>Titre personalisé de poste</h5>
+                <input type="text" id="inp1" class="input-text" placeholder="Titre personalisé de poste:" required>
+            </div>
+        </div>
+        <div class="row2">
+            <div>
+                <h5>Domaine de compétence(du poste): </h5>
+                <ng-select [items]="domaines" placeholder="Selectionner le domaine: "[(ngModel)]="selecteddomaine" [virtualScroll]="true" id="jobSelect">
+                    <ng-option *ngFor="let domaine of domaines" [value]="domaine">{{ domaine }}</ng-option>
+                    </ng-select>
+            </div>
+            <div>
+                <h5>Type de contrat:</h5>
+                <select id="contrattype">
+                <option disabled selected>type de contrat</option>
+                <option >CDD</option>
+                <option >CDI</option>
+                <option >STAGE</option>
+                </select>
+                </div>
+            <div>
+                <h5>Region:</h5>
+                <input type="text" id="inp" class="input-text" placeholder="region" required>
+            </div>
+        </div>
+        <div class="row3">
+            <div>
+                <h5>Salaire minimum:</h5>
+                <input type="number" id="prix" placeholder="1000">
+            </div>
+            <div><h5>Salaire maximum:</h5>
+                <input type="number" id="prix" placeholder="2000">
+            </div>
+            <div><h5>Periode:</h5>
+                <select id="periode">
+                    <option disabled selected>Periode</option>
+                    <option >par mois</option>
+                    <option >par semaines</option>
+                    <option >par jour</option>
+                    </select>
+            </div>
+            
+
+            
+        </div>
+        <div class="row4">        
+            <label for="textareaInput">Détails de l'offre (min 150 - max 7000 chars) : *</label><br>
+            <textarea id="textareaInput" name="textareaInput" rows="5" cols="10" placeholder="Type your text here..."></textarea>
+        </div>
+            <div class="buttons">
+        <button id="b1" routerLink="/espacerecruteur" routerLinkActive="active"> Annuler</button>
+        <button id="b2">Suivant</button>
+            </div>
+    </div>
+
+</body>

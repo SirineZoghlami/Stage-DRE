@@ -1,0 +1,89 @@
+<html>
+<head>
+</head>
+<body >
+        <div class="logo"><img src="assets/images/FORSA1.png" class="logo" alt="Logo" /></div>
+
+	<div class="page-content">
+
+			<form class="entreprise">
+				<div class="part1">
+					<h2>Entreprise:</h2>
+					
+					<div class="form-group1">
+						<div>
+                            
+							<input type="text" id="Nom de l'entreprise" class="input-text" placeholder="Nom de l'entreprise:" required>
+						</div>
+						<div>
+                            
+							<input type="text" id="Taille de l'entreprise" class="input-text" placeholder="Taille de l'entreprise" required><br>
+						</div>
+					</div>
+					    <div>
+                            <select id="secteur">
+                                <option disabled selected>secteur d'activité</option>
+                                <option >info/telecom</option>
+                                <option >communication</option>
+                            </select>
+					    </div>
+                </div>
+            </form>
+            <form class="Address">
+                <div class="part2">
+					<h2>Adresse:</h2>
+					<div class="form-group2">
+						<div>
+                            
+                            <input type="number" placeholder="Numéro de téléphone" required>
+                        </div>
+                        <div>
+                            
+							<input type="number" id="Code postal" class="input-text" placeholder="Code postal" required>
+						</div><br>
+                        <div>
+                            
+							<input type="text" id="region" class="input-text" placeholder="Region" required>
+						</div>
+						<div>
+                            
+                            <input id="adcom" type="text" placeholder="Address complete:" required>
+						
+						</div>
+					</div>
+					    
+                </div>
+                
+            </form>
+            <form class="contact">
+                <div class="part3">
+					<h2>Site web et réseaux sociaux:</h2>
+					<div class="form-group3">
+						<div>
+                            <h5> <i class="bi bi-browser-edge"></i> Site web:</h5>
+                            <input type="url" id="web" placeholder="site web exemple : https://forsa.com" required>
+                        </div>
+                        <br>
+                        <div>
+                            <h5> <i class="bi bi-linkedin"></i> Linkedin:</h5>
+							<input type="url" id="linkedin" class="input-text" placeholder="Linkedin page url ex https://www.linkedin.com/entreprise/forsa" required>
+						</div> <br>
+						<div>
+                            <h5> <i class="bi bi-facebook"></i> Facebook:</h5>
+							<input type="url" id="facebook" class="input-text" placeholder="Facebook url ex:https://Facebook.com/forsa" required>
+						
+						</div> <br>
+					</div>
+					    
+                </div>
+                
+            </form>
+            <div class="enregistrer">
+                <button id="btn" routerLink="/offre" routerLinkActive="active">Enregistrer</button>
+            </div>
+
+			
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+
+.ng-select {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    
+  }
+  .ng-select :hover{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  /* Style the dropdown input */
+.ng-select.ng-select-single .ng-select-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  /* Style the dropdown arrow */
+.ng-select.ng-select-single .ng-select-container .ng-arrow-wrapper {
+    top: calc(50% - 6px);
+    right: 10px;
+  }
+  
+  /* Style the dropdown options */
+.ng-select .ng-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  /* Hover effect for dropdown options */
+.ng-select .ng-option:hover {
+    background-color: #f0f0f0;
+  }
+  /**************/
+  body{
+    display: flex;
+    justify-content: center;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+ }
+ 
+h5{ 
+    font-family: Arial, sans-serif;
+    font-size:  15px;}
+
+.a{
+    border-radius: 10px;
+    margin-top: 90px;
+    width: 80%;
+    height: 100%;
+    padding-left: 50px;
+    background-color:white
+}
+
+.row1{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+}
+
+.row2{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 400px 250px 100px;
+}
+.row3{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 400px 250px 100px;
+}
+.row4{
+    margin-top: 50px;
+}
+#prix,
+#inp
+{
+width: 130px;
+height: 35px;
+}
+
+#periode{
+    width: 130px;
+    height: 35px;
+}
+#contrattype{
+    width: 130px;
+    height: 35px;  
+}
+#inp1{
+    width: 250px;
+}
+/* Apply styles to the Textarea container */
+#textareaInput {
+    width: 95%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  #textareaInput::placeholder {
+    color: #999;
+  }
+  
+  #textareaInput:focus {
+    outline: none;
+    border: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+#periode:hover,
+#prix:hover,
+#contrattype:hover, 
+#inp1:hover,
+#inp:hover
+{   border: none;
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+.buttons{
+    margin-top: 20px;
+    margin-left: 700px;
+
+}
+#b2{
+    color: #ebeaec;
+    margin-left: 10px;
+    background-color: #007bff;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+#b1{
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+#b1:hover{
+    border-color: #007bff; 
+}
+  #b2:hover
+{
+    border-color: #007bff; 
+    background-color: white; 
+    color: black 
+  }

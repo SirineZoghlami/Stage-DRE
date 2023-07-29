@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('src/assets/images/backg.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 300px;
+    margin-right: 180px;
+    margin-bottom: 180px;
+
+  }
+
+  .welcome-container {
+    margin-right: 50px;
+    margin-top: 120px;
+
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 32px;
+    color: rgb(49, 36, 126);
+  }
+  h4 {
+    margin-top: 0;
+    font-size: 19px;
+    color: rgb(29, 19, 83);
+  }
+
+  .buttons-container {
+    margin-top: 30px;
+    /**/
+    padding: 40px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color:  rgb(49, 36, 126);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .button:hover {
+    background-color: #2980b9;
+  }

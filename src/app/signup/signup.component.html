@@ -1,0 +1,50 @@
+<html>
+<head>
+	
+	<title>Form-v10 by Colorlib</title>
+</head>
+<body class="form-v10">
+	<div class="page-content">
+		<div class="form-v10-content">
+			<form class="form-detail" action="#" method="post" id="myform">
+				<div class="form-left">
+					<h2>Crée un compte Forsa</h2>
+					
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="Prénom" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Nom" required><br>
+						</div>
+					</div>
+					<div class="form-row">
+						<select name="Situation">
+						    <option >Chercher un stage</option>
+						    <option >Chercher un emploi</option>
+						</select><br>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-row">
+						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Adresse Email"><br><br>
+                        <input type="number" placeholder="Numéro de téléphone" required><br>
+					</div>
+                    
+					<div class="form-group">
+						<div class="form-row form-row-3">
+                            <input type="password" placeholder="Mot de passe"><br><br>
+                            <input type="password" placeholder="Verifier votre mot de passe ">
+						</div>
+					</div>
+				<div class="btn-submit" ><button  routerLink="/pagecv" routerLinkActive="active">S'inscrire</button></div>
+					
+				</div>
+				
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
