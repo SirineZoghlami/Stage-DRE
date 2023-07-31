@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // Import the FormsModule
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { FormComponentComponent } from './form-component/form-component.component'; // Import the form component
+import { FormComponentComponent } from './form-component/form-component.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
-import { RouterModule } from '@angular/router'; // Import RouterModule
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CandidatureOffreEmploisFormComponent } from './candidature-offre-emplois-form/candidature-offre-emplois-form.component';
-
-
+import { AjouterOffreFormComponent } from './ajouter-offre-form/ajouter-offre-form.component';
 
 @NgModule({
   declarations: [
@@ -25,18 +23,18 @@ import { CandidatureOffreEmploisFormComponent } from './candidature-offre-emploi
     NavbarComponent,
     FooterComponent,
     CandidatureOffreEmploisFormComponent,
-   // NavbarComponent
+    AjouterOffreFormComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MatDatepickerModule,
     MatInputModule,
-    RouterModule.forRoot([]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule, // Add the AppRoutingModule here
   ],
   providers: [],
-  bootstrap: [AppComponent]
-
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
+

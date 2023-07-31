@@ -15,6 +15,11 @@ export class FormComponentComponent {
     // Here, you can perform any logic with the form data.
     // For now, let's just log the form data to the console.
     console.log(this.formData);
+
+
   }
+
+
+  
 }
 

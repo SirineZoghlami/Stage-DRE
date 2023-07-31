@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter une offre</title>
+  <link rel="stylesheet" href="ajouter-offre-form.component.css">
+</head>
+<body>
+    
+  <div class="container">
+    <h1>Ajouter une offre</h1>
+    <form action="#" method="post">
+      <label for="title">Titre de l'offre</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Description de l'offre</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="company">Entreprise</label>
+      <input type="text" id="company" name="company" required>
+
+      <label for="location">Lieu</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="category">Domaine d'emploi</label>
+      <input type="text" id="category" name="category" required>
+
+      <label for="experience">Niveau d'expérience requis</label>
+      <select id="experience" name="experience" required>
+        <option value="">Sélectionner</option>
+        <option value="débutant">Débutant</option>
+        <option value="intermédiaire">Intermédiaire</option>
+        <option value="senior">Senior</option>
+      </select>
+
+      <label for="contract">Type de contrat</label>
+      <input type="text" id="contract" name="contract" required>
+
+      <label for="deadline">Date limite de candidature</label>
+      <input type="date" id="deadline" name="deadline" required>
+
+      <label for="skills">Compétences requises</label>
+      <textarea id="skills" name="skills" rows="4" required></textarea>
+
+      <label for="benefits">Avantages</label>
+      <textarea id="benefits" name="benefits" rows="4" required></textarea>
+
+      <button type="submit">Ajouter l'offre</button>
+    </form>
+  </div>
+  <router-outlet></router-outlet>
+
+</body>
+</html>
+
