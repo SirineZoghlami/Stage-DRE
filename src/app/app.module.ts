@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CandidatureOffreEmploisFormComponent } from './candidature-offre-emplois-form/candidature-offre-emplois-form.component';
 
 
 
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
+    CandidatureOffreEmploisFormComponent,
    // NavbarComponent
   ],
   imports: [

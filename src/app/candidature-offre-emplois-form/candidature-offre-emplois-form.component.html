@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de candidature</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="C:\Users\zoghl\project-name\src\app\candidature-offre-emplois-form\candidature-offre-emplois-form\.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulaire de candidature</h1>
+    <form action="#" method="post">
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="adresse">Adresse complète</label>
+      <input type="text" id="adresse" name="adresse" required>
+
+      <label for="telephone">Numéro de téléphone</label>
+      <input type="tel" id="telephone" name="telephone" required>
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="experience">Expérience professionnelle</label>
+      <textarea id="experience" name="experience" rows="4" required></textarea>
+
+      <label for="cv">Télécharger le CV</label>
+      <input type="file" id="cv" name="cv" required>
+
+      <label for="references">Références professionnelles</label>
+      <textarea id="references" name="references" rows="4" required></textarea>
+
+      <label for="lettre_motivation">Lettre de motivation</label>
+      <textarea id="lettre_motivation" name="lettre_motivation" rows="4" required></textarea>
+
+      <label for="autres">Autres informations</label>
+      <textarea id="autres" name="autres" rows="4"></textarea>
+
+      <label>
+        <input type="checkbox" name="consentement" required>
+        J'accepte que mes données personnelles soient collectées et traitées dans le cadre de ma candidature.
+      </label>
+
+      <button type="submit">Envoyer la candidature</button>
+    </form>
+  </div>
+</body>
+</html>
