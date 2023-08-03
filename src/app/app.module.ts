@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CandidatureOffreEmploisFormComponent } from './candidature-offre-emplois-form/candidature-offre-emplois-form.component';
 import { AjouterOffreFormComponent } from './ajouter-offre-form/ajouter-offre-form.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     CandidatureOffreEmploisFormComponent,
     AjouterOffreFormComponent,
     ProfilePageComponent,
+    EditProfileFormComponent,
   ],
   imports: [
     BrowserModule,
