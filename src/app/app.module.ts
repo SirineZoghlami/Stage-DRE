@@ -7,13 +7,13 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CandidatureOffreEmploisFormComponent } from './candidature-offre-emplois-form/candidature-offre-emplois-form.component';
 import { AjouterOffreFormComponent } from './ajouter-offre-form/ajouter-offre-form.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import { AjouterOffreFormComponent } from './ajouter-offre-form/ajouter-offre-fo
     FooterComponent,
     CandidatureOffreEmploisFormComponent,
     AjouterOffreFormComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,
