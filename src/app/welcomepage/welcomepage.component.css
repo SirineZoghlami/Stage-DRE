@@ -1,24 +1,22 @@
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background: url('src/assets/images/backg.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items:flex-start;
   }
   .logo {
-    width: 300px;
-    margin-right: 180px;
+    width: 220px;
     margin-bottom: 180px;
 
   }
 
   .welcome-container {
-    margin-right: 50px;
-    margin-top: 120px;
+    margin-right:80px;
+    margin-top: 180px;
+    margin-left: 150px;
 
   }
 
@@ -35,7 +33,7 @@ body {
 
   .buttons-container {
     margin-top: 30px;
-    /**/
+    margin-left: 45px;
     padding: 40px;
   }
 

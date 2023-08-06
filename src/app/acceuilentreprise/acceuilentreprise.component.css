@@ -1,0 +1,65 @@
+body{
+    background-color: antiquewhite;
+    height: 200vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+.nav{
+    height: 50px;
+    background-color: white;
+}
+.barre{
+    height: 100px;
+    background-color: white;
+}
+.container{
+    margin: 0;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+
+}
+/*********************mouraba3 lisar****************************************/
+.barre2{
+    height: 400px;
+    width: 600px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.barre2 .address{
+    margin-top: 20px;
+
+}
+.barre2 .entreprise{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/**************************************************************/
+.offre{
+    height: 400px;
+    margin-left:150px;
+    margin-right: 10px;
+    background-color: white;
+}
+.offre h5 {
+margin-left: 20px;
+}
+.offre h6 {
+    margin-left: 120px;
+}
+.offre p {
+    margin-left: 30px;
+
+}
+.offre button{
+    margin-top:50px;
+    margin-left: 39%;
+}

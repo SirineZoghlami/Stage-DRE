@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="navbar">
+        <div class="tittle">
+            <a href="home"><span>FO</span>RSA</a>
+        </div>
+        <div class="b1"><button id="btn1"><i class="bi bi-person"></i> Espace Candidat</button></div> 
+        <div class="b2"><button id="btn2"><i class="bi bi-briefcase"></i> Espace Recruteur</button></div> 
+        <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+        <div *ngIf="isDropdownOpen" class="dropdown">
+            <ul>
+              <li><i class="bi bi-person"></i> Edit Profile</li>
+              <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+            </ul>
+          </div>
+    </div>
+    <div class="wost">
+        <h1 id="ph1">Libérez votre potentiel </h1>
+        <h1>Trouvez votre voie vers le succès professionnel</h1>
+<div class="espacerecherche">
+      <div class="competences">
+        <ng-select 
+        [items]="options"
+        [multiple]="true"
+        bindLabel="name"
+        bindValue="id"
+        [(ngModel)]="selectedOptions"
+        placeholder="Chercher par compétence"
+        appendTo="body">
+        (change)="onNgSelectChange()">
+        <ng-option *ngFor="let option of options" [value]="option">{{ option }}</ng-option>
+        </ng-select>
+    </div>
+    <div class="type">
+      <select id="typecontrat" #contractSelect (change)="onContractSelect()">
+      <option disabled selected>Type de contrat</option>
+      <option >CDD</option>
+      <option >CDI</option>
+      <option >STAGE</option>
+      </select>
+     </div>
+     <div class="btnche"><button id="bt1"><i class="bi bi-search"></i> Rechercher</button></div>
+     
+    </div>
+    </div>
+
+
+
+</body>
+</html>

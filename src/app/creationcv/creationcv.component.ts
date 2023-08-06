@@ -14,6 +14,11 @@ export class CreationcvComponent {
     name: '',
     email: ''
 };
+isDropdownOpen: boolean = false;
+
+toggleDropdown() {
+  this.isDropdownOpen = !this.isDropdownOpen;
+}
 onSubmit() {
   console.log(this.formData);
 }}

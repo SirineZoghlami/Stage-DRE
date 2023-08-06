@@ -2,8 +2,7 @@
 <head>
 </head>
 <body >
-        <div class="logo"><img src="assets/images/FORSA1.png" class="logo" alt="Logo" /></div>
-
+       
 	<div class="page-content">
 
 			<form class="entreprise">
@@ -15,12 +14,18 @@
                             
 							<input type="text" id="Nom de l'entreprise" class="input-text" placeholder="Nom de l'entreprise:" required>
 						</div>
-						<div>
+						<div class="te">
                             
-							<input type="text" id="Taille de l'entreprise" class="input-text" placeholder="Taille de l'entreprise" required><br>
+							<select id="taille">
+                                <option disabled selected>Taille de l'entreprise</option>
+                                <option>Micro-entreprise &lt; 10</option>
+                                <option>Petite entreprise &lt; 50</option>
+    							<option>Moyenne entreprise &lt; 250</option>
+								<option > Grande entreprise ≥ 250 </option>
+                            </select>
 						</div>
 					</div>
-					    <div>
+					    <div >
                             <select id="secteur">
                                 <option disabled selected>secteur d'activité</option>
                                 <option >info/telecom</option>
@@ -79,7 +84,9 @@
                 
             </form>
             <div class="enregistrer">
-                <button id="btn" routerLink="/offre" routerLinkActive="active">Enregistrer</button>
+				<button id="btn" routerLink="/Signupcompany" routerLinkActive="active">Précedent</button>
+                <button id="btn" routerLink="/entreprise" routerLinkActive="active">Enregistrer</button>
+				
             </div>
 
 			

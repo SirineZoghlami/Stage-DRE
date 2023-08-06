@@ -3,8 +3,8 @@
 
 </head>
 <body>
-
-    <div class="a">
+<div class="a">
+    <div class="title1"><h3>Détails de l'offre</h3></div>
         <div class="row1">
             <div class="job">
                 <h5>Selectionner emploi:</h5>
@@ -12,10 +12,14 @@
                 <ng-option *ngFor="let job of jobTitles" [value]="job">{{ job }}</ng-option>
                 </ng-select>
             </div>
-
+            
             <div class="titre">
                 <h5>Titre personalisé de poste</h5>
                 <input type="text" id="inp1" class="input-text" placeholder="Titre personalisé de poste:" required>
+            </div>
+            <div class="autre">
+                <h5>Autre emploi:</h5>
+                <input type="text" id="inp3" class="input-text" placeholder="autre:" required>
             </div>
         </div>
         <div class="row2">
@@ -33,7 +37,7 @@
                 <option >CDI</option>
                 <option >STAGE</option>
                 </select>
-                </div>
+            </div>
             <div>
                 <h5>Region:</h5>
                 <input type="text" id="inp" class="input-text" placeholder="region" required>
@@ -54,19 +58,56 @@
                     <option >par semaines</option>
                     <option >par jour</option>
                     </select>
-            </div>
-            
-
-            
+            </div> 
         </div>
         <div class="row4">        
             <label for="textareaInput">Détails de l'offre (min 150 - max 7000 chars) : *</label><br>
             <textarea id="textareaInput" name="textareaInput" rows="5" cols="10" placeholder="Type your text here..."></textarea>
         </div>
-            <div class="buttons">
-        <button id="b1" routerLink="/espacerecruteur" routerLinkActive="active"> Annuler</button>
-        <button id="b2">Suivant</button>
-            </div>
-    </div>
 
+            <div class="title2">
+            <h3>Compétences réquises</h3>
+                 </div>
+            <div class="row5">
+                <div class="experience">
+                    <h5>Expérience:</h5>
+                    <select id="exp">
+                        <option disabled selected>Expérience</option>
+                        <option >Sans Experience</option>
+                        <option >moin d'une année</option>
+                        <option >1 à 2 ans</option>
+                        <option >3 à 5 ans</option>
+                        <option >6 à 10 ans</option>
+                        <option >10 à 15 ans</option>
+                        <option >Plus de 15 ans</option>
+                        </select>
+                </div>
+                <div class="disponibilite">
+                    <h5>Disponibilité:</h5>
+                    <select id="dispo">
+                        <option disabled selected>Disponibilité</option>
+                        <option >Plein temps presentiel</option>
+                        <option >temps partiel </option>
+                        <option >travaille à distance</option>
+                        <option >hybride</option>
+                        </select>
+                </div>
+                <div class="competences">
+                    <h5>Compétences</h5>
+                    <ng-select
+                    [items]="options"
+                    [multiple]="true"
+                    bindLabel="name"
+                    bindValue="id"
+                    [(ngModel)]="selectedOptions"
+                    placeholder="Select options..."
+                  ><ng-option *ngFor="let option of options" [value]="option">{{ option }}</ng-option></ng-select>
+                </div>
+            </div>
+                <div class="buttons">
+                    <button id="b1" routerLink="/espacerecruteur" routerLinkActive="active"> Annuler</button>
+                    <button id="b2">Suivant</button>
+                </div>
+
+            </div>
 </body>

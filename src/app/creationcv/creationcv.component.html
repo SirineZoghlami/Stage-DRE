@@ -1,93 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html >
 <head>
-
   <meta charset="UTF-8">
-  <title>CodePen - Contact us Form</title>
+  <title>Formulaire de candidature</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="C:\Users\zoghl\project-name\src\app\form-component\form-component.component.css">
+  <link rel="stylesheet" href="C:\Users\zoghl\project-name\src\app\candidature-offre-emplois-form\candidature-offre-emplois-form\.css">
 </head>
 <body>
-
-<!-- partial:index.partial.html -->
-<div class="container">
-   <div class="text">
-      Creer votre cv!
-   </div>
-   <form action="#">
-    <div>
-      Veuillez remplir votre carrière universitaire
+  <div class="navbar">
+    <div class="tittle">
+        <a href="home"><span>FO</span>RSA</a>
     </div>
-      <div class="form-row">
-         <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">Etablissement :</label>
-          </div>
-        </div>
-
-         <div class="form-row">
-
-         <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">Type de diplome :</label>
-         </div>
+    <div class="b1"><button id="btn1"><i class="bi bi-person"></i> Espace Candidat</button></div> 
+    <div class="b2"><button id="btn2"><i class="bi bi-briefcase"></i> Espace Recruteur</button></div> 
+    <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+    <div *ngIf="isDropdownOpen" class="dropdown">
+        <ul>
+          <li><i class="bi bi-person"></i> Edit Profile</li>
+          <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+        </ul>
       </div>
+  </div>
+  <div class="container">
+    <h1>Formulaire de candidature</h1>
+    <form action="#" method="post">
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" required>
 
-      <div class="form-row">
-         <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">Filière du diplome</label>
-         </div>
-        </div>
+      <label for="adresse">Adresse complète</label>
+      <input type="text" id="adresse" name="adresse" required>
 
+      <label for="telephone">Numéro de téléphone</label>
+      <input type="tel" id="telephone" name="telephone" required>
 
-         <div class="form-row">
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required>
 
-         <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">Intitulé du diplome</label>
-         </div>
-      </div>
+      <label for="experience">Expérience professionnelle</label>
+      <textarea id="experience" name="experience" rows="4" required></textarea>
 
+      <label for="cv">Télécharger le CV</label>
+      <input type="file" id="cv" name="cv" required>
 
-      <div class="form-row">
+      <label for="references">Références professionnelles</label>
+      <textarea id="references" name="references" rows="4" required></textarea>
 
-        <div class="input-data">
+      <label for="lettre_motivation">Lettre de motivation</label>
+      <textarea id="lettre_motivation" name="lettre_motivation" rows="4" required></textarea>
 
-           <input type="date" required>
-           <div class="underline"></div>
-           <label for=""></label>
-        </div>
-        à
-        <div class="input-data">
-          <input type="date" required>
-          <div class="underline"></div>
-          <label for=""></label>
-    </div>
-     </div>
-      <div class="form-row">
-         <div class="input-data textarea">
-            <textarea rows="8" cols="80" required></textarea>
-            <br />
-            <div class="underline"></div>
-            <label for="">Compétences</label>
-         </div>
-      </div>
+      <label for="autres">Autres informations</label>
+      <textarea id="autres" name="autres" rows="4"></textarea>
 
-      <div class="form-row submit-btn">
-         <div class="input-data">
-            <div class="inner"></div>
-            <input type="submit" value="enregistrer">
-         </div>
-      </div>
-   </form>
-</div>
-<!-- partial -->
+      <label>
+        <input type="checkbox" name="consentement" required>
+        J'accepte que mes données personnelles soient collectées et traitées dans le cadre de ma candidature.
+      </label>
 
-
+      <button type="submit">Envoyer la candidature</button>
+    </form>
+  </div>
 </body>
 </html>

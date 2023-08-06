@@ -18,6 +18,10 @@ import { EsprecruteurComponent } from './esprecruteur/esprecruteur.component';
 import { SignupcompanyComponent } from './signupcompany/signupcompany.component';
 import { OffreComponent } from './offre/offre.component';
 import { NgModule } from '@angular/core';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentreprise.component';
+import { TestComponent } from './test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,11 @@ import { NgModule } from '@angular/core';
     CreationcvComponent,
     EsprecruteurComponent,
     SignupcompanyComponent,
-    OffreComponent
+    OffreComponent,
+    HomepageComponent,
+    ProfileComponent,
+    AcceuilentrepriseComponent,
+    TestComponent
     
   ],
   imports: [

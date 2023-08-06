@@ -1,150 +1,166 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+body {
+  height: 300vh;
+  padding-top: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5F5F5;
+ 
 }
-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 10px;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
-}
-.container{
+
+.container {
   max-width: 800px;
-  background: #fff;
-  width: 800px;
-  padding: 25px 40px 10px 40px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  background-color: #fff; /* Changing the background color to white */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to the container */
 }
-.container .text{
+
+h1 {
   text-align: center;
-  font-size: 41px;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  font-size: 30px;
+	color:blueviolet;
+
 }
-.container form{
-  padding: 30px 0 0 0;
-}
-.container form .form-row{
+
+form {
   display: flex;
-  margin: 32px 0;
+  flex-wrap: wrap;
 }
-form .form-row .input-data{
+
+label {
   width: 100%;
-  height: 40px;
-  margin: 0 20px;
-  position: relative;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
-form .form-row .textarea{
-  height: 70px;
-}
-.input-data input,
-.textarea textarea{
-  display: block;
+.container button,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+input[type="file"] {
   width: 100%;
-  height: 100%;
-  border: none;
-  font-size: 17px;
-  border-bottom: 2px solid rgba(0,0,0, 0.12);
-}
-.input-data input:focus ~ label, .textarea textarea:focus ~ label,
-.input-data input:valid ~ label, .textarea textarea:valid ~ label{
-  transform: translateY(-20px);
-  font-size: 14px;
-  color: #3498db;
-}
-.textarea textarea{
-  resize: none;
-  padding-top: 10px;
-}
-.input-data label{
-  position: absolute;
-  pointer-events: none;
-  bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
   font-size: 16px;
-  transition: all 0.3s ease;
 }
-.textarea label{
-  width: 100%;
-  bottom: 40px;
-  background: #fff;
+textarea {
+  resize: vertical;
 }
-.input-data .underline{
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-}
-.input-data .underline:before{
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background: #3498db;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-.input-data input:focus ~ .underline:before,
-.input-data input:valid ~ .underline:before,
-.textarea textarea:focus ~ .underline:before,
-.textarea textarea:valid ~ .underline:before{
-  transform: scale(1);
-}
-.submit-btn .input-data{
- overflow: hidden;
-  height: 45px!important;
-  width: 25%!important;
-
-  
-}
-.submit-btn .input-data .inner{
-  height: 100%;
-  width: 300%;
-  position: absolute;
-  /*left: -100%;*/
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-  transition: all 0.4s;
-}
-.submit-btn .input-data:hover .inner{
-  left: 0;
-}
-.submit-btn .input-data input{
-  background: none;
-  border: none;
+.container  button {
+  background-color:blueviolet;
+  margin-top: 20px;
   color: #fff;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border: none;
   cursor: pointer;
-  position: relative;
-  z-index: 2;
+}
+.container button:hover {
+  background-color: rgb(58, 17, 97);
 }
 
-@media (max-width: 700px) {
-  .container .text{
-    font-size: 30px;
-  }
-  .container form{
-    padding: 10px 0 0 0;
-  }
-  .container form .form-row{
-    display: block;
-  }
-  form .form-row .input-data{
-    margin: 35px 0!important;
-  }
-  .submit-btn .input-data{
-    width: 40%!important;
-  }
+label input[type="checkbox"] {
+  margin-right: 5px;
 }
+/***************************************************************************************/
+.navbar{
+    background-color: white;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
+}
+#btn1{
+    margin-left: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color:white;
+    height: 40px;
+    width: 170px;
+    font-size: 16px;
+    color:darkorchid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+#btn2{
+    margin-left: 30px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 180px;
+    font-size: 16px;
+    color: rgb(73, 68, 68);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn3{
+    margin-left: 350px;
+    border-radius: 30px;
+    height: 60px;
+    width: 63px;
+    border-width: 1px;
+    border-color: rgb(153, 118, 72);
+}
+.logo{
+    width: 100px;
+    height: 80px;
+
+}
+a span{
+    
+    color:rgb(117, 57, 173);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    font-size: 40px;
+    text-decoration: none;
+    color:blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle{
+    margin-left: 40px;
+}
+#btn1:hover,
+#btn2:hover{
+    background-color: rgba(212, 212, 212, 0.493);
+}
+.logo-img {
+
+    width: 45px;
+    height: 44px;
+    cursor: pointer;
+    margin-left: 350px;
+  }
+  
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    padding-bottom:  10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 999px;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  
+  .dropdown li:hover {
+    background-color: #ddd;
+  }

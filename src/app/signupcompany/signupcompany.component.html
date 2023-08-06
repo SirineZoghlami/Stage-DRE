@@ -1,39 +1,55 @@
 <html>
 <head>
+
 	
-	<title>Form-v10 by Colorlib</title>
 </head>
-<body class="form-v10">
+<body>
+	<div class="navbar">
+        <div class="tittle">
+            <a href="home"><span>FO</span>RSA</a>
+        </div>
+        <div class="b1"><button id="btn1"><i class="bi bi-person"></i> Espace Candidat</button></div> 
+        <div class="b2"><button id="btn2"><i class="bi bi-briefcase"></i> Espace Recruteur</button></div> 
+        <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+        <div *ngIf="isDropdownOpen" class="dropdown">
+            <ul>
+              <li><i class="bi bi-person"></i> Edit Profile</li>
+              <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+            </ul>
+          </div>
+    </div>
 	<div class="page-content">
-		<div class="form-v10-content">
-			<form class="form-detail" action="#" method="post" id="myform">
-				<div class="form-left">
-					<h2>Crée un compte Forsa</h2>
-					
-					<div class="form-group">
-						<div class="form-row form-row-1">
-							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="Nom de l'entreprise" required>
+
+			<div class="form">
+				<h1>Créez votre compte</h1>
+						<div class="row1">
+							<div>
+								<h5>Nom de l'entreprise</h5>
+								<input type="text" required>
+							</div>
 						</div>
-					
+					<div class="row2">
+						<h5>Email</h5>
+						<input type="text"  required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="nom@esprit.tn">
 					</div>
-					
-					<div class="form-row">
-						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Email"><br><br>
-                        <input type="number" placeholder="Téléphone" required><br>
+
+					<div class="row3">
+						<h5>Mot de passe</h5>
+						<input type="password">
 					</div>
-                    
-					<div class="form-group">
-						<div class="form-row form-row-3">
-                            <input type="password" placeholder="Mot de passe"><br><br>
-                            <input type="password" placeholder="Verifier votre mot de passe ">
-						</div>
+					<div class="row4">
+						<h5>Confirmer votre mot de passe</h5>
+                        <input type="password">
 					</div>
-				<div class="btn-submit" ><button  routerLink="/espacerecruteur" routerLinkActive="active">S'inscrire</button></div>
+					<div class="row5">
+						<h5>Téléphone</h5>
+						<input type="number" required>
+					</div>
+
+		
+				<button  class="b" routerLink="/espacerecruteur" routerLinkActive="active">Créez votre compte</button>
 					
-				</div>
-				
-			</form>
-		</div>
+			</div>
 	</div>
 	
 </body>

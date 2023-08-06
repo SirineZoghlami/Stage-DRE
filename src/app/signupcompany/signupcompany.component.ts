@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./signupcompany.component.css']
 })
 export class SignupcompanyComponent {
+  isDropdownOpen: boolean = false;
 
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
 }

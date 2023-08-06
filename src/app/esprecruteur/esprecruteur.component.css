@@ -16,12 +16,12 @@ body{
     margin-bottom: 20px;
 }
 .page-content{
+    margin-top: 90px;
     background-color: white;
     width: 80%;
     padding-bottom: 20px;
     padding-top: 50px;
     margin-bottom: 200px;
-    border-radius: 10px;
 
 }
 .entreprise,
@@ -115,6 +115,14 @@ margin-left: 20px;
 color: #3c4674;
 font-size: 12px;
 }
+#taille
+{
+width: 290px;
+padding-bottom: 8px;
+color: #3c4674;
+font-size: 12px;
+}
+
 
 .form-group3{
 margin-top: 20px;
@@ -122,16 +130,23 @@ margin-left: 20px;
 
 }
 #btn{
-margin-left: 440px;
-border-radius: 15px;
-background-color:#9053c7;
-color: white;
-    border: none;
+    margin-left: 440px;
+    background-color:#9053c7;
+    border: 1px solid #ccc;
+    color: white;
 	height: 40px;
     width: 100px;
     cursor: pointer;
 }
 
 #btn:hover {
-    background-color:#333333;
+    background-color:#fffefe;
+    color: #121113;
+    border-color:black;
   }
+  .enregistrer{
+    display: grid;
+    grid-template-columns: 110px 100px;
+    margin-left: 280px;
+  }
+

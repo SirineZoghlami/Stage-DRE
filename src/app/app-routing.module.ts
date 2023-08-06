@@ -9,9 +9,12 @@ import { CreationcvComponent } from './creationcv/creationcv.component';
 import { EsprecruteurComponent } from './esprecruteur/esprecruteur.component';
 import { SignupcompanyComponent } from './signupcompany/signupcompany.component';
 import { OffreComponent } from './offre/offre.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentreprise.component';
+import { TestComponent } from './test/test.component';
 const routes: Routes = [
-  {path: '', component: FormComponent  }, // Default route
-
+{path: 'form', component: FormComponent  }, // Default route
  {path:'sui', component : SignupComponent },
  {path:'Signupcompany', component : SignupcompanyComponent},
  {path:'loginpage', component : LoginpageComponent },
@@ -20,6 +23,11 @@ const routes: Routes = [
  {path:'pagecv', component : CreationcvComponent    },
  {path:'espacerecruteur', component :EsprecruteurComponent    },
  {path:'offre', component :OffreComponent  },
+ {path:'home', component :HomepageComponent  },
+ {path:'profile', component :ProfileComponent },
+ {path:'entreprise', component :AcceuilentrepriseComponent},
+ {path:'test', component :TestComponent  }
+
 
 ];
 

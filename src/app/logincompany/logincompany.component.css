@@ -30,7 +30,21 @@ a:hover {
     text-decoration: none;
   color: #57b846;
 }
-
+.text-center-p-t-136 a{
+  color:#652999;
+  text-decoration: none;
+}
+.text-center-p-t-136 h5{
+ margin-left: 70px;
+ margin-top: 10px;
+}
+.text-center-p-t-136 h5:hover{
+  color: #59d041;
+ }
+.text-center-p-t-12{
+  margin-left: 80px;
+  margin-top: 20px;
+}
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
     margin: 0px;
@@ -139,11 +153,10 @@ iframe {
 }
 
 .wrap-login100 {
-  width: 960px;
+  width: 400px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 40px;
   overflow: hidden;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -151,25 +164,20 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 107px 130px 33px 95px;
+  /*padding: 107px 130px 33px 95px;*/
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom:20px;
 }
 
 /*------------------------------------------------------------------
 [  ]*/
-.login100-pic {
-  width: 316px;
-}
-
-.login100-pic img {
-  max-width: 100%;
-}
 
 
 /*------------------------------------------------------------------
 [  ]*/
 .login100-form {
-  width: 290px;
-  /*/////////////////////*/
+  width: 300px;
   display: flex;
   justify-content:center;
   flex-direction: column;
@@ -178,14 +186,17 @@ iframe {
 
 .login100-form-title {
   font-family: Poppins-Bold;
-  font-size: 24px;
-  color: #333333;
-  line-height: 1.2;
-  text-align: center;
+  font-size: 27px;
+  color:#652999;
 
+  text-align: flex-start;
   width: 100%;
   display: block;
   padding-bottom: 50px;
+}
+.login100-form-title h6{
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 

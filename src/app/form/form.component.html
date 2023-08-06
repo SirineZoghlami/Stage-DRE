@@ -1,30 +1,91 @@
-
 <!DOCTYPE html>
+<html lang="en" >
 <head></head>
-
 <body>
-    <div class="page">
-        <div class="flex-container">
-            <div class="logo">
-            <img src="assets/images/FORSA.png" class="logo" alt="Logo" />
+   <div class="navbar">
+      <div class="tittle">
+          <a href="home"><span>FO</span>RSA</a>
+      </div>
+      <div class="b1"><button id="btn1"><i class="bi bi-person"></i> Espace Candidat</button></div> 
+      <div class="b2"><button id="btn2"><i class="bi bi-briefcase"></i> Espace Recruteur</button></div> 
+      <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+      <div *ngIf="isDropdownOpen" class="dropdown">
+          <ul>
+            <li><i class="bi bi-person"></i> Edit Profile</li>
+            <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+          </ul>
+        </div>
+  </div>
+<div class="container">
+   <div class="text">
+      <h1>Créer votre cv</h1>
+   </div>
+   <form action="#">
+    <div class="jomla">
+      <h3>Veuillez remplir votre carrière universitaire</h3>
+    </div>
+      <div class="form-row">
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for=""><h1>Etablissement :</h1></label>
+          </div>
+        </div>
+
+         <div class="form-row">
+
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for=""><h1>Type de diplome :</h1></label>
+         </div>
+      </div>
+
+      <div class="form-row">
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for=""><h1>Filière du diplome</h1></label>
+         </div>
+        </div>
+
+
+         <div class="form-row">
+
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for=""><h1>Intitulé du diplome</h1></label>
+         </div>
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="input-data">
+            <div class="row">
+                <div><h1 id="harq">Diplomer depuis :</h1></div>
+                <div><input id="date" type="date" required></div>
             </div>
-            <div class="recherche" >
-                <input type="text" >
-                <button classe="search">
-                    <div>
-                      <i class="bi bi-search"></i> 
-                      <span>Search</span>
-                    </div>
-                </button>
-            </div>
-            <div class="buttons">
-            <button class="signup-button" routerLink="sui" routerLinkActive="active">Sign Up</button>
-            <button class="login-button" routerLink="loginpage" routerLinkActive="active">Log In</button>
-        </div>  
+
         </div>
         
-        <div class="wost">
-        </div>
+     </div>
+      <div class="form-row">
+         <div class="input-data textarea">
+            <textarea rows="8" cols="80" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for=""><h1>Compétences</h1></label>
+         </div>
+      </div>
 
-    </div>
+      <div class="form-row submit-btn">
+         <div class="input-data">
+            <button   routerLink="/pagecv" routerLinkActive="active" class="benregistrer">Enregistrer</button>
+         </div>
+      </div>
+   </form>
+</div>
 </body>
+</html>
