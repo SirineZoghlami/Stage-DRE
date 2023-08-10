@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <title>Formulaire de candidature</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="C:\Users\zoghl\project-name\src\app\candidature-offre-emplois-form\candidature-offre-emplois-form\.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="tittle">
-        <a href="home"><span>FO</span>RSA</a>
+      <div class="tittle">
+        <a href="welcomepage"><span>FO</span>RSA</a>
     </div>
-    <div class="b1"><button id="btn1"><i class="bi bi-person"></i> Espace Candidat</button></div> 
-    <div class="b2"><button id="btn2"><i class="bi bi-briefcase"></i> Espace Recruteur</button></div> 
-    <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
-    <div *ngIf="isDropdownOpen" class="dropdown">
-        <ul>
-          <li><i class="bi bi-person"></i> Edit Profile</li>
-          <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
-        </ul>
-      </div>
+  <div class="navbar">
+    <div class="b1"><button id="btn1" routerLink="/loginpage" routerLinkActive="active">Se connecter</button></div> 
+    <div class="b2"><button id="btn2"  routerLink="/sui" routerLinkActive="active">S'inscrire </button></div> 
+    <div class="b3"><button id="btn3"  routerLink="/form" routerLinkActive="active">Créer votre cv </button></div> 
+    <div class="b4"><button id="btn4"  routerLink="/pagecv" routerLinkActive="active">Candidature</button></div>
   </div>
   <div class="container">
     <h1>Formulaire de candidature</h1>
@@ -30,16 +21,10 @@
       <label for="adresse">Adresse complète</label>
       <input type="text" id="adresse" name="adresse" required>
 
-      <label for="telephone">Numéro de téléphone</label>
-      <input type="tel" id="telephone" name="telephone" required>
-
-      <label for="email">Adresse e-mail</label>
-      <input type="email" id="email" name="email" required>
-
       <label for="experience">Expérience professionnelle</label>
       <textarea id="experience" name="experience" rows="4" required></textarea>
 
-      <label for="cv">Télécharger le CV</label>
+      <label for="cv">Télécharger votre CV</label>
       <input type="file" id="cv" name="cv" required>
 
       <label for="references">Références professionnelles</label>
@@ -56,7 +41,7 @@
         J'accepte que mes données personnelles soient collectées et traitées dans le cadre de ma candidature.
       </label>
 
-      <button type="submit">Envoyer la candidature</button>
+      <button type="submit" routerLink="/home" routerLinkActive="active">Soumettre la candidature</button>
     </form>
   </div>
 </body>

@@ -2,20 +2,16 @@
 <html lang="en" >
 <head></head>
 <body>
-   <div class="navbar">
-      <div class="tittle">
-          <a href="home"><span>FO</span>RSA</a>
-      </div>
-      <div class="b1"><button id="btn1"><i class="bi bi-person"></i> Espace Candidat</button></div> 
-      <div class="b2"><button id="btn2"><i class="bi bi-briefcase"></i> Espace Recruteur</button></div> 
-      <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
-      <div *ngIf="isDropdownOpen" class="dropdown">
-          <ul>
-            <li><i class="bi bi-person"></i> Edit Profile</li>
-            <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
-          </ul>
-        </div>
+   <div class="tittle">
+      <a href="welcomepage"><span>FO</span>RSA</a>
   </div>
+<div class="navbar">
+  <div class="b1"><button id="btn1" routerLink="/loginpage" routerLinkActive="active">Se connecter</button></div> 
+  <div class="b2"><button id="btn2"  routerLink="/sui" routerLinkActive="active">S'inscrire </button></div> 
+  <div class="b3"><button id="btn3"  routerLink="/form" routerLinkActive="active">Créer votre cv </button></div> 
+  <div class="b4"><button id="btn4"  routerLink="/pagecv" routerLinkActive="active">Candidature</button></div>
+
+</div>
 <div class="container">
    <div class="text">
       <h1>Créer votre cv</h1>
@@ -64,7 +60,7 @@
 
         <div class="input-data">
             <div class="row">
-                <div><h1 id="harq">Diplomer depuis :</h1></div>
+                <div><h1 id="harq">Diplomer depuis</h1></div>
                 <div><input id="date" type="date" required></div>
             </div>
 

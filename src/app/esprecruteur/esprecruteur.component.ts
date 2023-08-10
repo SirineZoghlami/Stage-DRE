@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./esprecruteur.component.css']
 })
 export class EsprecruteurComponent {
+  isDropdownOpen: boolean = false;
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
 }

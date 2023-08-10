@@ -2,33 +2,112 @@
 <html>
 <body>
     <div class="nav">
-
-    </div>
-    <div class="barre">
-        <h1>Informations société:</h1>
+        <div class="tittle">
+            <a href="home"><span>FO</span>RSA</a>
+        </div>
+        <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+        <div *ngIf="isDropdownOpen" class="dropdown">
+            <ul>
+              <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+            </ul>
+        </div>
+        
     </div>
     <div class="container">
-        <div class="barre2">
-            <div class="entreprise">
-                <h3>Esm entreprise</h3>
-                <h6>Entreprise</h6>
-                <h6>informatique/telecom</h6>
-            </div>
-            <div class="address">
-                <h3>address</h3>
-                <p>chera3 ghana</p>
-                <p>region</p>
-                <p>numr tlf</p>
+        <div class="container2 mt-4 mb-4 p-3 d-flex justify-content-center">
+            <div class="card p-4"> 
+               <div class=" image d-flex flex-column justify-content-center align-items-center"> 
+                   <button class="btn">
+                    <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" />
+                    </button> 
+                   <span class="name mt-3">Esm entreprise</span> 
+                   <span class="idd">Entreprise</span> 
+                   <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                       <span class="idd1">@email</span> 
+                       <span><i class="fa fa-copy"></i></span>
+                   </div> 
+                   <span class="name mt-3">Adresse</span> 
+                   <span class="idd"><i class="bi bi-geo-fill"></i> region</span> 
+                   <span class="idd"><i class="bi bi-geo-alt"></i> localisation</span> 
+                   <span class="idd"><i class="bi bi-telephone"></i> numero de telephone</span> <br>
+                   <br>
+                   <div class=" d-flex mt-2">
+                       <button class="btn1" (click)="toggleModifProfile()">Modifier Profil </button>
+                   </div> 
+                   <div class=" px-2 rounded mt-4 date "> 
+                       <span class="join">Inscrit en mai 2021</span> 
+                   </div> 
+               </div> 
             </div>
         </div>
         <div class="offre">
-            <h5>Pipeline actifs</h5>
-            <h6>Créez votre premier pipeline de recrutement !!</h6>
-            <p>Le pipeline de recrutement donne un aperçu des différentes étapes qu'un candidat traverse au cours de la période d'entretien et d'évaluation.</p>
-            <button>Ajouter une offre</button>
+            <div class="offrebarre">
+                <h5>Gestion des offres</h5>
+                <button routerLink="/offre" routerLinkActive="active"> <i class="bi bi-plus-circle-fill"></i> Ajouter une offre </button>
+            </div>
         </div>
     </div>
+    <div class="modifprofil" *ngIf="showModifProfile">
+        <form class="entreprise">
+            <div class="part1">
+                <h2>Entreprise:</h2>
+                
+                <div class="form-group1">
+                    <div>
+                        
+                        <input type="text" id="Nom de l'entreprise" class="input-text" placeholder="Nom de l'entreprise:" required>
+                    </div>
+                    <div class="te">
+                        
+                        <select id="taille">
+                            <option disabled selected>Taille de l'entreprise</option>
+                            <option>Micro-entreprise &lt; 10</option>
+                            <option>Petite entreprise &lt; 50</option>
+                            <option>Moyenne entreprise &lt; 250</option>
+                            <option > Grande entreprise ≥ 250 </option>
+                        </select>
+                    </div>
+                </div>
+                    <div >
+                        <select id="secteur">
+                            <option disabled selected>secteur d'activité</option>
+                            <option >info/telecom</option>
+                            <option >communication</option>
+                        </select>
+                    </div>
+            </div>
+        </form>
+        <form class="Address">
+            <div class="part2">
+                <h2>Adresse:</h2>
+                <div class="form-group2">
+                    <div>
+                        
+                        <input type="number" placeholder="Numéro de téléphone" required>
+                    </div>
+                    <div>
+                        
+                        <input type="number" id="Code postal" class="input-text" placeholder="Code postal" required>
+                    </div><br>
+                    <div>
+                        
+                        <input type="text" id="region" class="input-text" placeholder="Region" required>
+                    </div>
+                    <div>
+                        
+                        <input id="adcom" type="text" placeholder="Address complete:" required>
+                    
+                    </div>
+                </div>
+                    
+            </div>
+            
+        </form>
+        <div class="btnenreg" >
+        <button class="enregis">Enregistrer</button>
+        </div>
 
+    </div>
 
 </body>
 </html>

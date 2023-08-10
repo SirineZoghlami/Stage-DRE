@@ -13,6 +13,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentreprise.component';
 import { TestComponent } from './test/test.component';
+import { ContactusComponent } from './contactus/contactus.component';
 const routes: Routes = [
 {path: 'form', component: FormComponent  }, // Default route
  {path:'sui', component : SignupComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
  {path:'home', component :HomepageComponent  },
  {path:'profile', component :ProfileComponent },
  {path:'entreprise', component :AcceuilentrepriseComponent},
- {path:'test', component :TestComponent  }
+ {path:'test', component :TestComponent  },
+ {path:'contactus', component : ContactusComponent  }
 
 
 ];
