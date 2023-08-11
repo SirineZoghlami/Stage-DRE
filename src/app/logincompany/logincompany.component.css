@@ -100,13 +100,13 @@ textarea::-moz-placeholder { color: #999999; }
 textarea:-ms-input-placeholder { color: #999999; }
 
 /*---------------------------------------------*/
-button {
+.login100-form-btn {
     outline: none !important;
     border: none;
     background: transparent;
 }
 
-button:hover {
+.container-login100-form-btn button:hover {
     cursor: pointer;
 }
 
@@ -132,18 +132,16 @@ iframe {
   width: 100%;
   margin: 0 auto;
 }
+.limiter2{
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 .container-login100 {
   width: 100%;  
   min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  
   padding: 15px;
   background: #9053c7;
   background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
@@ -153,21 +151,18 @@ iframe {
 }
 
 .wrap-login100 {
+  margin-left: 400px;
   width: 400px;
   background: #fff;
   border-radius: 40px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /*padding: 107px 130px 33px 95px;*/
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom:20px;
+  
 }
 
 /*------------------------------------------------------------------
@@ -179,6 +174,8 @@ iframe {
 .login100-form {
   width: 300px;
   display: flex;
+  /**/
+  margin-top: 20px;
   justify-content:center;
   flex-direction: column;
   padding-bottom: 40px;
@@ -311,11 +308,8 @@ iframe {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background: #9053c7;;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
+  background: #9053c7;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,4 +432,64 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+}
+/*************************************boutonet*******************************************/
+.buttons{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.ins {
+  background-color:#9053c7;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  height:35px;
+  color:white;
+  cursor: pointer;
+}
+.con{
+  
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(192, 186, 186);
+  width: 100px;
+  height:35px;
+  border-left: none;
+  cursor: pointer;
+}
+
+.buttons .b1 button:hover {
+  background-color:#652999;
+}
+.buttons .b2 button:hover{
+  background-color:#ecebeb
+}
+i{
+  font-size: 30px;
+  color:white;
+  cursor: pointer;
+
+}
+.ins1 {
+  background-color:white;
+  width: 120px;
+  border: none;
+  border: 1px solid rgb(192, 186, 186);
+  border-radius: 10px;
+  height:35px;
+  color:black;
+  cursor: pointer;
+}
+
+.con1{
+  background-color:#9053c7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height:35px;
+  border-left: none;
+  cursor: pointer;
 }
