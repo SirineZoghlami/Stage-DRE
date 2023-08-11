@@ -85,16 +85,27 @@ a{
 }
 
 /**************************************************************/
+.navoffre{
+    background-color: white;
+    height: 40px;
+    width: 705px;
+    margin-left: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .offre{
     border: none;
     border-radius: 8px;
     height: 530px;
-    width: 2500px;
+    width: 705px;
     margin-left: 30px;
     background-color: white;
     font-weight: 600;
     line-height: 1.5;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .offrebarre{
     display: grid;
@@ -108,20 +119,31 @@ a{
     margin-top: 10px;
     }
 
-.offre button{
-    margin-left:130px;
+.navoffre .btn1{
     height: 40px;
-    background-color: #545492;
-    color: white;
+    color:  #545492;
+    margin-left: 40px;
+    background-color: white;
     border: none;
     cursor: pointer;
     width: 160px;
-    font-size: 15px;
-    border-bottom-left-radius: 15px;
+    font-size: 17px;
+    
+}
+.navoffre .btn2{
+    height: 40px;
+    margin-left: 40px;
+    background-color: white;
+    color:  #545492;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    font-size: 17px;
+
     
 
 }
-.offre button:hover{
+.navoffre button:hover{
     background-color:#9999d4;
 }
 /*******************************************************************************************/

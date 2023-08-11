@@ -16,25 +16,34 @@ animations: [
   ]),
 ],
 })
-export class AcceuilentrepriseComponent implements OnInit{
-
-  showSlide = true;
-  ngOnInit(): void {}
-  toggleSlide() {
-    this.showSlide = !this.showSlide;
-  }
-  
-  
+export class AcceuilentrepriseComponent{
   isDropdownOpen: boolean = false;
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
   }
-
+/*******************thabetk llmodifier ****************************/
   showModifProfile = false;
 
   toggleModifProfile() {
     this.showModifProfile = !this.showModifProfile;
+  }
+
+  scrollToModifProfile() {
+    const modifProfileSection = document.getElementById('modifProfileSection');
+    if (modifProfileSection) {
+      modifProfileSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  /****************************ytalaa lfouq**************************/
+
+
+  scrollup() {
+    const up = document.getElementById('interface1');
+    if (up) {
+      this.showModifProfile = !this.showModifProfile;
+      up.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
 }

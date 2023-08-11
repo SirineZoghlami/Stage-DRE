@@ -37,7 +37,6 @@ margin-left: 50px;
 .row1 input,
 .row3 input,
 .row4 input,
-.row5 input,
 .row2 input{
 	border: 1px solid gainsboro;
 	height: 40px;
@@ -47,8 +46,7 @@ margin-left: 50px;
 
 .row2,
 .row3,
-.row4,
-.row5{
+.row4{
 	margin-top: 40px;
 }
 .row1 input,

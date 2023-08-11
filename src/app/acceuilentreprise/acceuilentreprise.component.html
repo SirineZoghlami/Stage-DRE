@@ -3,7 +3,7 @@
 <body>
     <div class="nav">
         <div class="tittle">
-            <a href="home"><span>FO</span>RSA</a>
+            <a href="welcomepage"><span>FO</span>RSA</a>
         </div>
         <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
         <div *ngIf="isDropdownOpen" class="dropdown">
@@ -13,7 +13,7 @@
         </div>
         
     </div>
-    <div class="container">
+    <div class="container" id="interface1">
         <div class="container2 mt-4 mb-4 p-3 d-flex justify-content-center">
             <div class="card p-4"> 
                <div class=" image d-flex flex-column justify-content-center align-items-center"> 
@@ -32,7 +32,7 @@
                    <span class="idd"><i class="bi bi-telephone"></i> numero de telephone</span> <br>
                    <br>
                    <div class=" d-flex mt-2">
-                       <button class="btn1" (click)="toggleModifProfile()">Modifier Profil </button>
+                       <button class="btn1" (click)="toggleModifProfile()" (click)="scrollToModifProfile()">Modifier Profil </button>
                    </div> 
                    <div class=" px-2 rounded mt-4 date "> 
                        <span class="join">Inscrit en mai 2021</span> 
@@ -40,14 +40,25 @@
                </div> 
             </div>
         </div>
-        <div class="offre">
-            <div class="offrebarre">
-                <h5>Gestion des offres</h5>
-                <button routerLink="/offre" routerLinkActive="active"> <i class="bi bi-plus-circle-fill"></i> Ajouter une offre </button>
+        <div class="rightrow">
+            <div class="navoffre">
+                <div><button class="btn1"> consulter vos offre</button></div>
+                <div><button class="btn2">  Ajouter une offre </button></div>
+                
+                
+            </div>
+
+
+            <div class="offre">
+                <div class="offrebarre">
+                    <h5>Gestion des offres</h5>
+                    
+                </div>
             </div>
         </div>
+
     </div>
-    <div class="modifprofil" *ngIf="showModifProfile">
+    <div class="modifprofil" *ngIf="showModifProfile" id="modifProfileSection">  
         <form class="entreprise">
             <div class="part1">
                 <h2>Entreprise:</h2>
@@ -104,7 +115,7 @@
             
         </form>
         <div class="btnenreg" >
-        <button class="enregis">Enregistrer</button>
+        <button class="enregis" (click)="scrollup()">Enregistrer</button>
         </div>
 
     </div>

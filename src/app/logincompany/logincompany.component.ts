@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./logincompany.component.css']
 })
 export class LogincompanyComponent {
+  showDiv1 = true;
+  showDiv2 = false;
+
+  toggleDivs() {
+    this.showDiv1 = !this.showDiv1;
+    this.showDiv2 = !this.showDiv2;
+  }
 
 }
