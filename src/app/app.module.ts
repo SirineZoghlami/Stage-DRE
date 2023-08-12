@@ -15,7 +15,6 @@ import { LogincompanyComponent } from './logincompany/logincompany.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { CreationcvComponent } from './creationcv/creationcv.component';
 import { EsprecruteurComponent } from './esprecruteur/esprecruteur.component';
-import { SignupcompanyComponent } from './signupcompany/signupcompany.component';
 import { OffreComponent } from './offre/offre.component';
 import { NgModule } from '@angular/core';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -33,13 +32,12 @@ import { ContactusComponent } from './contactus/contactus.component';
     LogincompanyComponent,
     CreationcvComponent,
     EsprecruteurComponent,
-    SignupcompanyComponent,
     OffreComponent,
     HomepageComponent,
     ProfileComponent,
     AcceuilentrepriseComponent,
     TestComponent,
-    ContactusComponent
+    ContactusComponent,
     
   ],
   imports: [
