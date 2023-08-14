@@ -1,73 +1,56 @@
-<div class="container px-5 my-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="card border-0 rounded-3 shadow-lg">
-          <div class="card-body p-4">
-            <div class="text-center">
-              <div class="h1 fw-light">Nous Contacter </div>
-              <p class="mb-4 text-muted"></p>
-            </div>
-  
-            <!-- * * * * * * * * * * * * * *
-            // * * SB Forms Contact Form * *
-            // * * * * * * * * * * * * * * *
-  
-            // This form is pre-integrated with SB Forms.
-            // To make this form functional, sign up at
-            // https://startbootstrap.com/solution/contact-forms
-            // to get an API token!
-            -->
-  
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-  
-              <!-- Name Input -->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                <label for="name">Nom et Prenom</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-              </div>
-  
-              <!-- Email Input -->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                <label for="emailAddress">Addresse Email</label>
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-              </div>
-  
-              <!-- Message Input -->
-              <div class="form-floating mb-3">
-                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                <label for="message">Message</label>
-                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-              </div>
-  
-              <!-- Submit success message -->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  <p>To activate this form, sign up at</p>
-                  <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
-              </div>
-  
-              <!-- Submit error message -->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
-              </div>
-  
-              <!-- Submit button -->
-              <div class="d-grid">
-                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Envoyer</button>
-              </div>
-            </form>
-            <!-- End of contact form -->
-  
+<!DOCTYPE html>
+<html lang="en" >
+<head></head>
+<body>
+   <div class="tittle">
+      <a href="welcomepage"><span>FO</span>RSA</a>
+  </div>
+<div class="navbar">
+  <div class="b1"><button id="btn1" routerLink="/loginpage" routerLinkActive="active">Se connecter</button></div> 
+  <div class="b2"><button id="btn2"  routerLink="/sui" routerLinkActive="active">S'inscrire </button></div> 
+  <div class="b3"><button id="btn3"  routerLink="/form" routerLinkActive="active">Créer votre cv </button></div> 
+  <div class="b4"><button id="btn4"  routerLink="/pagecv" routerLinkActive="active">Candidature</button></div>
+
+</div>
+<div class="container">
+   <div class="text">
+      <h1>Nous Contacter</h1>
+   </div>
+   <form action="#">
+   
+      <div class="form-row">
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for=""><h1>Nom et prénom:</h1></label>
           </div>
         </div>
+
+         <div class="form-row">
+
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for=""><h1>Adresse email :</h1></label>
+         </div>
       </div>
+
+      <div class="form-row">
+        <div class="input-data">
+            <input type="text" required style="font-size: 18px; padding: 10px;">
+            <div class="underline" style="height: 2px;"></div>
+            <label for="message" style="font-size: 24px;"><h1>Message :</h1></label>
+        </div>
     </div>
-  </div>
-  
-  <!-- CDN Link to SB Forms Scripts -->
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+
+
+      <div class="form-row submit-btn">
+         <div class="input-data">
+            <button   routerLink="/pagecv" routerLinkActive="active" class="benregistrer">Enregistrer</button>
+         </div>
+      </div>
+   </form>
+</div>
+</body>
+</html>
