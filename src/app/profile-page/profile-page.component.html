@@ -1,151 +1,120 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="container emp-profile">
-            <form method="post">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
-                            <div class="file btn btn-lg btn-primary">
-                                Changer Photo
-                                <input type="file" name="file"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="profile-head">
-                                    <h5>
-                                        Kshiti Ghelani
-                                    </h5>
-                                    <h6>
-                                        Web Developer and Designer
-                                    </h6>
-                                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="modifer profile"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile-work">
-                            <p>liens </p>
-                            <a href="">linkedin</a><br/>
-
-                            <a href="">facebook</a><br/>
-                            <a href="">github</a>
-                            <p>SKILLS</p>
-                            <a href="">Web Designer</a><br/>
-                            <a href="">Web Developer</a><br/>
-                            <a href="">WordPress</a><br/>
-                            <a href="">WooCommerce</a><br/>
-                            <a href="">PHP, .Net</a><br/>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                            </div>
-                                            <div class="col-md-6">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Nom et prénom</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Kshiti Ghelani</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Email</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>kshitighelani@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>téléphone</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>123 456 7890</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Profession</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Web Developer and Designer</p>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Experience</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Expert</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Hourly Rate</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>10$/hr</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Total Projects</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>230</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>English Level</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Expert</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Availability</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>6 months</p>
-                                            </div>
-                                        </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <label>Your Bio</label><br/>
-                                        <p>Your detail description</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>           
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="nav">
+        <div class="tittle">
+            <a href="welcomepage"><span>FO</span>RSA</a>
         </div>
+        <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+        <div *ngIf="isDropdownOpen" class="dropdown">
+            <ul>
+              <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="container" id="interface1">
+        <div class="container2 mt-4 mb-4 p-3 d-flex justify-content-center">
+            <div class="card p-4"> 
+               <div class=" image d-flex flex-column justify-content-center align-items-center"> 
+                   <button class="btn">
+                    <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" />
+                    </button> 
+                   <span class="name mt-3">sirine </span> 
+                   <span class="idd">étudiante à esprit</span> 
+                   <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                       <span class="idd1">@email</span> 
+                       <span><i class="fa fa-copy"></i></span>
+                   </div> 
+                   <span class="name mt-3">Adresse</span> 
+                   <span class="idd"><i class="bi bi-geo-fill"></i> region</span> 
+                   <span class="idd"><i class="bi bi-geo-alt"></i> localisation</span> 
+                   <span class="idd"><i class="bi bi-telephone"></i> numero de telephone</span> <br>
+                   <br>
+                   
+                   <div class=" d-flex mt-2">
+                    <button class="importer-cv" (click)="importCV()">Importer CV</button>
+
+                       <button class="btn1" (click)="toggleModifProfile()" (click)="scrollToModifProfile()">Modifier Profil </button>
+                   </div> 
+                   
+                   <div class=" px-2 rounded mt-4 date "> 
+                       <span class="join">Inscrit en mai 2021</span> 
+                   </div> 
+               </div> 
+            </div>
+        </div>
+        <div class="rightrow">
+            
+
+            <div class="offre">
+                <div class="offrebarre">
+                    <h5>Gestion des demandes de stages et d'emplois</h5>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modifprofil" *ngIf="showModifProfile" id="modifProfileSection">  
+        <form class="entreprise">
+            <div class="part1">
+                <h2>Modifier profile:</h2>
+                
+                <div class="form-group1">
+                    <div>
+                        <input type="text" id="Nom" class="input-text" placeholder="Nom " required>
+                    </div>
+                    <div class="te">
+                        
+                        <div>
+                        
+                            <input type="text" id="prénom" class="input-text" placeholder="prénom " required>
+                        </div>
+                        
+                    </div>
+
+                   
+                </div>
+                  
+
+            </div>
+        </form>
+        <form class="Address">
+            <div class="part2">
+                <div class="form-group2">
+                    <div>
+                        
+                        <input type="number" placeholder="Numéro de téléphone" required>
+                    </div>
+                    
+                    <div>
+                        
+                        <input type="number" id="Code postal" class="input-text" placeholder="Code postal" required>
+                    </div><br>
+                    <div>
+                        
+                        <input type="text" id="region" class="input-text" placeholder="Region" required>
+                    </div>
+                    <div>
+                        
+                        <input id="adcom" type="text" placeholder="Address complete:" required>
+                    
+                    </div>
+                </div>
+                  
+                
+                
+            </div>
+            
+        </form>
+
+
+        <div class="btnenreg" >
+        <button class="enregis" (click)="scrollup()">Enregistrer</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
