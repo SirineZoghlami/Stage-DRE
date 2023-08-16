@@ -1,5 +1,5 @@
 body{
-    height: 130vh;
+    height: 160vh;
     width: 100%;
     padding-top: 20px;
     background-color:rgba(212, 212, 212, 0.493);
@@ -59,12 +59,12 @@ body{
     height: 80px;
 
 }
-a span{
+.tittle a span{
     
     color:rgb(117, 57, 173);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-a{
+.tittle a{
     font-size: 40px;
     text-decoration: none;
     color:blueviolet;
@@ -207,4 +207,33 @@ a{
 
 .btnche button:hover {
   background-color:  rgb(87, 24, 146);
+}
+/******************************fooooooter**************************************/
+footer{
+  background-color:rgb(87, 24, 146);
+  color: aliceblue;
+  height: 440px;
+}
+.logo {
+  width: 200px;
+  height: auto; 
+}
+.col h6{
+  font-size: 15px;
+}
+.col p{
+  font-size: 12px;
+}
+.r1{
+  padding-top: 4px;
+}
+.resaux{
+  margin-left: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.resaux i{
+  font-size: 20px;
 }

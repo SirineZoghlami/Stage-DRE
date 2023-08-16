@@ -42,16 +42,23 @@
         </div>
         <div class="rightrow">
             <div class="navoffre">
-                <div><button class="btn1"> consulter vos offre</button></div>
-                <div><button class="btn2">  Ajouter une offre </button></div>
+                <div><button class="btn1" (click)="togglegestion()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'"><i class="bi bi-info-circle"></i>
+                     Consulter vos offre </button></div>
+                <div><button class="btn2" (click)="toggleajouter()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'"> <i class="bi bi-patch-plus-fill"></i> Ajouter une offre </button></div>
                 
                 
             </div>
 
 
-            <div class="offre">
+            <div class="offre" *ngIf="gestionoffre" >
                 <div class="offrebarre">
-                    <h5>Gestion des offres</h5>
+                    <h5>Gestion des offres </h5>
+                    
+                </div>
+            </div>
+            <div class="offre" *ngIf="ajouteroffre" >
+                <div class="offrebarre">
+                    <h5>Ajouter un offre</h5>
                     
                 </div>
             </div>

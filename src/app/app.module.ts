@@ -1,4 +1,3 @@
-
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
@@ -47,15 +46,6 @@ import { ContactusComponent } from './contactus/contactus.component';
     FormsModule,
     NgSelectModule,
     CommonModule,
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

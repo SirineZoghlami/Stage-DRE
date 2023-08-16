@@ -107,6 +107,10 @@ a{
     line-height: 1.5;
     margin-top: 20px;
 }
+.offre h5 {
+    color: rgb(117, 57, 173);;
+
+}
 .offrebarre{
     display: grid;
     height: 40px;
@@ -118,33 +122,39 @@ a{
     font-weight: bold;
     margin-top: 10px;
     }
-
+.navoffre .btn1.active{
+    border-bottom: 2px solid rgb(117, 57, 173);
+    color: rgb(117, 57, 173); 
+}
+.navoffre .btn2.active{
+    border-bottom: 2px solid rgb(117, 57, 173);
+    color: rgb(117, 57, 173); 
+}
 .navoffre .btn1{
     height: 40px;
-    color:  #545492;
+    color:  #6e6b7b;
     margin-left: 40px;
     background-color: white;
+    border: none;
     cursor: pointer;
-    width: 160px;
+    width: 180px;
     font-size: 17px;
+    font-weight: 450;
     
 }
 .navoffre .btn2{
     height: 40px;
     margin-left: 40px;
     background-color: white;
-    color:  #545492;
-    border: none;
+    color:  #6e6b7b;
     cursor: pointer;
-    width: 160px;
+    width: 180px;
     font-size: 17px;
-
-    
+    border: none;
+    font-weight: 450;
 
 }
-.navoffre button:hover{
-    background-color:#9999d4;
-}
+
 /*******************************************************************************************/
 .card {
     width: 350px; 

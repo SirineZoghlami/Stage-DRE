@@ -45,5 +45,27 @@ export class AcceuilentrepriseComponent{
       up.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  /***************buttons ******/
+  activeButton1: string | null = 'button1';
+  setActiveButton1(button: string) {
+    if (this.activeButton1 !== button) {
+      this.activeButton1 = button;
+    } else {
+      this.activeButton1 = null; // Toggle off if the same button is clicked again
+    }
+  }
+  /****************************************************** */
+  gestionoffre = true;
+  ajouteroffre = false;
+
+  togglegestion() {
+    this.gestionoffre = true;
+    this.ajouteroffre= false;
+  }
+
+  toggleajouter() {
+    this.ajouteroffre= true;
+    this.gestionoffre = false;
+  }
 
 }
