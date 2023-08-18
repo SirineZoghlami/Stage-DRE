@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormComponent  } from './form/form.component';
-import { SignupComponent  } from './signup/signup.component';
 import { LoginpageComponent  } from './loginpage/loginpage.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 import { LogincompanyComponent } from './logincompany/logincompany.component';
@@ -16,7 +15,6 @@ import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
 {path: 'form', component: FormComponent  },
- {path:'sui', component : SignupComponent },
  {path:'loginpage', component : LoginpageComponent },
  {path:'welcomepage', component : WelcomepageComponent  },
  {path:'logincompany', component : LogincompanyComponent   },
