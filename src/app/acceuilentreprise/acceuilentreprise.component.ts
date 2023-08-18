@@ -56,16 +56,7 @@ export class AcceuilentrepriseComponent{
   }
   /****************************************************** */
   gestionoffre = true;
-  ajouteroffre = false;
-
   togglegestion() {
     this.gestionoffre = true;
-    this.ajouteroffre= false;
   }
-
-  toggleajouter() {
-    this.ajouteroffre= true;
-    this.gestionoffre = false;
-  }
-
 }

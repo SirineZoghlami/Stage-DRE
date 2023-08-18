@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentreprise.component';
 import { TestComponent } from './test/test.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
 
 const routes: Routes = [
 {path: 'form', component: FormComponent  },
@@ -25,7 +26,8 @@ const routes: Routes = [
  {path:'profile', component :ProfileComponent },
  {path:'entreprise', component :AcceuilentrepriseComponent},
  {path:'test', component :TestComponent  },
- {path:'contactus', component : ContactusComponent  }
+ {path:'contactus', component : ContactusComponent  },
+ {path:'ajouteoffre', component :AjouteroffreComponent   }
 
 
 ];

@@ -21,6 +21,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentreprise.component';
 import { TestComponent } from './test/test.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     AcceuilentrepriseComponent,
     TestComponent,
     ContactusComponent,
+    AjouteroffreComponent,
     
   ],
   imports: [

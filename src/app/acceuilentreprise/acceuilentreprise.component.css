@@ -99,7 +99,7 @@ a{
 .offre{
     border: none;
     border-radius: 8px;
-    height: 530px;
+    height: 470px;
     width: 705px;
     margin-left: 30px;
     background-color: white;
@@ -236,9 +236,23 @@ hr .new1 {
     background-color: #ccc
 }
 /**********************************************modifier le profil**************************************************************************/
+/*icons*/
+#facebook{
+    color: blue;
+    margin-right: 6px;
+}
+#linkedin{
+    color: #0A66C2;
+    margin-right: 6px;
+}
+#web{
+    color: #0f794d;
+    margin-right: 6px;
+}
+/*********/
 .modifprofil{
     background-color: white;
-    height: 500px;
+    height: 810px;
     margin-top: 20px;
     margin-left: 70px;
     margin-right:50px;
@@ -246,15 +260,22 @@ hr .new1 {
     border-radius: 20px;
 }
 .entreprise,
-.address
+.address,
+.contact
 {
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 50px;
 
 }
+.contact h5
+{
+font-size: 15px;
+
+}
 .entreprise h2,
-.address h2
+.address h2,
+.contact h2
 {
 color: rgb(102, 28, 102);
 font-size: 20px;

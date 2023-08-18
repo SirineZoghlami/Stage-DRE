@@ -44,21 +44,14 @@
             <div class="navoffre">
                 <div><button class="btn1" (click)="togglegestion()" (click)="setActiveButton1('button1')" [class.active]="activeButton1 === 'button1'"><i class="bi bi-info-circle"></i>
                      Consulter vos offre </button></div>
-                <div><button class="btn2" (click)="toggleajouter()" (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'"> <i class="bi bi-patch-plus-fill"></i> Ajouter une offre </button></div>
-                
-                
+                <div><button class="btn2"   routerLink="/ajouteoffre" routerLinkActive="active"
+                    (click)="setActiveButton1('button2')" [class.active]="activeButton1 === 'button2'"> <i class="bi bi-patch-plus-fill"></i> Ajouter une offre </button></div>
             </div>
 
 
             <div class="offre" *ngIf="gestionoffre" >
                 <div class="offrebarre">
                     <h5>Gestion des offres </h5>
-                    
-                </div>
-            </div>
-            <div class="offre" *ngIf="ajouteroffre" >
-                <div class="offrebarre">
-                    <h5>Ajouter un offre</h5>
                     
                 </div>
             </div>
@@ -116,6 +109,29 @@
                         <input id="adcom" type="text" placeholder="Address complete:" required>
                     
                     </div>
+                </div>
+                    
+            </div>
+            
+        </form>
+        <form class="contact">
+            <div class="part3">
+                <h2>Site web et réseaux sociaux:</h2>
+                <div class="form-group3">
+                    <div>
+                        <h5 id="web"> <i id="web"class="bi bi-browser-edge"></i> Site web:</h5>
+                        <input type="url" id="web" placeholder="site web exemple : https://forsa.com" required>
+                    </div>
+                    <br>
+                    <div>
+                        <h5 id="linkedin"> <i id="linkedin" class="bi bi-linkedin"></i> Linkedin:</h5>
+                        <input type="url" id="linkedin" class="input-text" placeholder="Linkedin page url ex https://www.linkedin.com/entreprise/forsa" required>
+                    </div> <br>
+                    <div>
+                        <h5 id="facebook"> <i id="facebook" class="bi bi-facebook"></i> Facebook:</h5>
+                        <input type="url" id="facebook" class="input-text" placeholder="Facebook url ex:https://Facebook.com/forsa" required>
+                    
+                    </div> <br>
                 </div>
                     
             </div>
