@@ -19,9 +19,9 @@ import { NgModule } from '@angular/core';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentreprise.component';
-import { TestComponent } from './test/test.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +35,9 @@ import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
     HomepageComponent,
     ProfileComponent,
     AcceuilentrepriseComponent,
-    TestComponent,
     ContactusComponent,
     AjouteroffreComponent,
+    FooterComponent,
     
   ],
   imports: [
