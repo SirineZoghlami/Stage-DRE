@@ -22,6 +22,9 @@ import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentrepris
 import { ContactusComponent } from './contactus/contactus.component';
 import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
 import { FooterComponent } from './footer/footer.component';
+import { MesCandidaturesComponent } from './mes-candidatures/mes-candidatures.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +41,9 @@ import { FooterComponent } from './footer/footer.component';
     ContactusComponent,
     AjouteroffreComponent,
     FooterComponent,
+    MesCandidaturesComponent,
+    NavbarComponent,
+
     
   ],
   imports: [

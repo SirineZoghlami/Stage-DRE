@@ -13,6 +13,7 @@ import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentrepris
 
 import { ContactusComponent } from './contactus/contactus.component';
 import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
+import { MesCandidaturesComponent } from './mes-candidatures/mes-candidatures.component'; 
 
 const routes: Routes = [
   {path:'', component : WelcomepageComponent  },
@@ -27,7 +28,8 @@ const routes: Routes = [
  {path:'profile', component :ProfileComponent },
  {path:'entreprise', component :AcceuilentrepriseComponent},
  {path:'contactus', component : ContactusComponent  },
- {path:'ajouteoffre', component :AjouteroffreComponent   }
+ {path:'ajouteoffre', component :AjouteroffreComponent   },
+ { path: 'mes-candidatures', component: MesCandidaturesComponent },
 
 
 ];

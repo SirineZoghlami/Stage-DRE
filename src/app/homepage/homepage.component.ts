@@ -24,12 +24,12 @@ export class HomepageComponent {
     { id: 9, name: 'C/C++' }
   ]
   selectedOptions: any[] = [];
-
   onContractSelect() {
     const selectElement = document.getElementById('typecontrat') as HTMLSelectElement;
     if (selectElement) {
       selectElement.classList.toggle('selected-option', selectElement.value !== '');
     }
   }
+
 
 }

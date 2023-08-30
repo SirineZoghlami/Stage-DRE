@@ -1,0 +1,19 @@
+body{
+    background-color: #efefef;
+    height: 100vh;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}

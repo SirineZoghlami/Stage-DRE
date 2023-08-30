@@ -1,6 +1,6 @@
 body{
   background-color: #efefef;
-  height: 300vh;
+  height: 100vh;
   margin-top: 0;
   width: 100%;
   display: flex;
@@ -27,7 +27,6 @@ a span{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a{
-  font-size: 40px;
   text-decoration: none;
   color:blueviolet;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -128,7 +127,6 @@ a{
   cursor: pointer;
   width: 160px;
   font-size: 17px;
-}
   
 .navoffre .importer-cv{
   height: 40px;
@@ -141,7 +139,7 @@ a{
   font-size: 17px;
 
 }
-
+}
 .navoffre .btn2{
   height: 40px;
   margin-left: 40px;
@@ -239,122 +237,58 @@ hr .new1 {
   background-color: #ccc
 }
 /**********************************************modifier le profil**************************************************************************/
-.modifprofil{
-  background-color: white;
-  height: 500px;
-  margin-top: 20px;
-  margin-left: 70px;
-  margin-right:50px;
-  margin-bottom: 50px;
-  border-radius: 20px;
-}
-.entreprise,
-.address
-{
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 50px;
 
-}
-.entreprise h2,
-.address h2
-{
-color: rgb(102, 28, 102);
-font-size: 20px;
-}
-.form-group1,
-.form-group2
-{   margin-left: 20px;
-  display: grid;
-  grid-template-columns: 500px 200px 200px;
-  grid-template-rows: 70px;
-  margin-top: 20px;
-}
 
-.form-group1 input,
-.form-group2 input,
-.form-group3 input
-{
-padding-right: 100px;
-border: 1px solid transparent;
-background: transparent;
-appearance: unset;
--moz-appearance: unset;
--webkit-appearance: unset;
--o-appearance: unset;
--ms-appearance: unset;
-outline: none;
--moz-outline: none;
--webkit-outline: none;
--o-outline: none;
--ms-outline: none;
-font-family: 'Montserrat', sans-serif;
-font-size: 16px;
-box-sizing: border-box;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
--o-box-sizing: border-box;
--ms-box-sizing: border-box;
-}
-.form-group1 input,
-.form-group2 input,
-.form-group3 input{
-  border-bottom: 1px solid #ccc;
-}
-.form-group1 input :focus,
-.form-group2 input:focus{
-  border-bottom: 1px solid #ccc;
-}
-.form-group2 #adcom,
-.form-group2 #region
-{
 
-width: 400px;
-}
-
-.form-group3 input
-{
-width: 600px;
-}
-.form-group3 ::placeholder,
-.form-group2 ::placeholder,
-.form-group1 ::placeholder
-{
-color: #3c4674;
-font-size: 12px;
-}
-#secteur
-{
-width: 290px;
-padding-bottom: 8px;
-margin-left: 20px;
-color: #3c4674;
-font-size: 12px;
-}
-#taille
-{
-width: 290px;
-padding-bottom: 8px;
-color: #3c4674;
-font-size: 12px;
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8;
 }
 
 
-.form-group3{
-margin-top: 20px;
-margin-left: 20px;
 
+
+
+
+
+
+
+
+.labels {
+  font-size: 11px;
 }
-.enregis{
-  margin-left: 450px;
-  margin-top: 15px;
-  height: 40px;
-  width: 150px;
-  border: none;
-  background-color: #32325d;
-  color: white;
-  font-size: 15px
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8;
 }
-.enregis:hover{
-  background-color: #545492;
+
+.containertest {
+  display: flex;
+  gap: 10px; /* Adjust the gap size as needed */
+}
+
+.element {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+.importer-cv:hover{
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8;
+}
+
+.mes-candidature:hover{
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8;
+  width: 12px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  padding: 5px 10px; /* Adjust padding for spacing inside the button */
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div class="tittle">
-    <a href="welcomepage"><span>FO</span>RSA</a>
-</div>
+
     <div class="navbar">
+      <div class="tittle">
+        <a href="welcomepage"><span>FO</span>RSA</a>
+    </div>
         <div class="b1"><button id="btn1" routerLink="/home" routerLinkActive="active"><i class="bi bi-house"></i> Acceuil</button></div> 
         <div class="b2"><button id="btn2" routerLink="" routerLinkActive="active"> <i class="bi bi-border-width"></i> Candidatures</button></div>
         <div class="b3"><button id="btn3" routerLink="/profile" routerLinkActive="active"><i class="bi bi-person"></i> Profile</button></div>  
@@ -29,7 +30,6 @@
         [(ngModel)]="selectedOptions"
         placeholder="Chercher par compétence"
         appendTo="body">
-        (change)="onNgSelectChange()">
         <ng-option *ngFor="let option of options" [value]="option">{{ option }}</ng-option>
         </ng-select>
     </div>
@@ -43,6 +43,10 @@
      </div>
      <div class="btnche"><button id="bt1"><i class="bi bi-search"></i> Rechercher</button></div>
      
+    </div>
+
+    <div class="paragraphe">
+      <p>Simple, performant et équitable, grâce à l'IA, aux entretiens vidéo et à l'analyse de CV... le recrutement n'a jamais été aussi fluide, Forsa est né d'une nécessité. Celle de rapprocher candidats et recruteurs, de bâtir des passerelles et de permettre aux entreprises de qualité de dénicher les talents idéaux pour leurs projets. Notre objectif est d'éliminer les dépenses superflues inhérentes à ce processus, tant du côté des employeurs que des postulants.</p>
     </div>
     </div>
   </body>

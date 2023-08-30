@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Router } from '@angular/router';
+/*import { MesCandidaturesComponent } from '../mes-candidatures/mes-candidatures.component';*/
 
 @Component({
   selector: 'app-profile',

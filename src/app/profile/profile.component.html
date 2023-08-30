@@ -13,6 +13,8 @@
         </div>
         
     </div>
+
+    
     <div class="container" id="interface1">
         <div class="container2 mt-4 mb-4 p-3 d-flex justify-content-center">
             <div class="card p-4"> 
@@ -32,89 +34,90 @@
                    <span class="idd"><i class="bi bi-telephone"></i> numero de telephone</span> <br>
                    <br>
                    
+                   
                    <div class=" d-flex mt-2">
                     <button class="importer-cv" (click)="importCV()">Importer CV</button>
 
-                       <button class="btn1" (click)="toggleModifProfile()" (click)="scrollToModifProfile()">Modifier Profil </button>
                    </div> 
+                   <div class="d-flex mt-2">
+                    <button >
+                    
+                      <a routerLink="/mes-candidatures" class="mes-candidature">Mes Candidatures</a>
+                    </button>
+                  </div>
+                  
+
                    
                    <div class=" px-2 rounded mt-4 date "> 
                        <span class="join">Inscrit en mai 2021</span> 
                    </div> 
                </div> 
+
+               
             </div>
-        </div>
-        <div class="rightrow">
+
             
-
-            <div class="offre">
-                <div class="offrebarre">
-                    <h5>Gestion des demandes de stages et d'emplois</h5>
-                    
-                </div>
-            </div>
         </div>
-
-    </div>
-    <div class="modifprofil" *ngIf="showModifProfile" id="modifProfileSection">  
-        <form class="entreprise">
-            <div class="part1">
-                <h2>Modifier profile:</h2>
-                
-                <div class="form-group1">
-                    <div>
-                        <input type="text" id="Nom" class="input-text" placeholder="Nom " required>
-                    </div>
-                    <div class="te">
-                        
-                        <div>
-                        
-                            <input type="text" id="prénom" class="input-text" placeholder="prénom " required>
+       
+            
+                    <div class="container rounded bg-white mt-4 mb-3">
+                        <div class="row">
+                           
+                            <div class="col-md-5 border-right">
+                                <div class="p-3 py-5">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h2 class="text-right">Modifer profile</h2>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-6"><label class="labels">Nom</label><input type="text" class="form-control" placeholder="Nom" value="Zoghlami"></div>
+                                        <div class="col-md-6"><label class="labels">Prenom</label><input type="text" class="form-control" value="Sirine" placeholder="prénom"></div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12"><label class="labels">Poste</label><input type="text" class="form-control" placeholder="Poste" value="Etudiante"></div>
+                                        <div class="col-md-12"><label class="labels">email</label><input type="text" class="form-control" placeholder="email" value="abc@gmail.com"></div>
+                                        <div class="col-md-12"><label class="labels">numero de telephone</label><input type="text" class="form-control" placeholder="numero de telephone" value="12345678"></div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6"><label class="labels">pays</label><input type="text" class="form-control" placeholder="pays" value="tunisie"></div>
+                                        <div class="col-md-6"><label class="labels">Region</label><input type="text" class="form-control" value="ariana" placeholder="region"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 py-5">
+                                    <div class="d-flex justify-content-between align-items-center experience"><h2>modifier Experience</h2><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div>
+                                    <div class="d-flex flex-row mt-3 exp-container"><img src="https://i.imgur.com/azSfBM3.png" width="45" height="45">
+                                        <div class="work-experience ml-1"><span class="font-weight-bold d-block">Senior UI/UX Designer</span><span class="d-block text-black-50 labels">Twitter Inc.</span><span class="d-block text-black-50 labels">Mars,2017 - juin 2020</span></div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-row mt-3 exp-container"><img src="https://img.icons8.com/color/100/000000/facebook.png" width="45" height="45">
+                                        <div class="work-experience ml-1"><span class="font-weight-bold d-block">Senior UI/UX Designer</span><span class="d-block text-black-50 labels">Facebook Inc.</span><span class="d-block text-black-50 labels">Mars,2017 - juin 2020</span></div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-row mt-3 exp-container"><img src="https://img.icons8.com/color/50/000000/google-logo.png" width="45" height="45">
+                                        <div class="work-experience ml-1"><span class="font-weight-bold d-block">UI/UX Designer</span><span class="d-block text-black-50 labels">Google Inc.</span><span class="d-block text-black-50 labels">Mars,2017 - juin 2020</span></div>
+                                    </div>
+                                </div>
+                            </div>      
+                    
+                            <div class="text-center">
+                                <div class="">
+                                    <span class="border px-3 p-1 add-experience">&nbsp;Enregistrer</span>
+                                </div>
+                            </div>
                         </div>
-                        
                     </div>
 
-                   
-                </div>
-                  
-
-            </div>
-        </form>
-        <form class="Address">
-            <div class="part2">
-                <div class="form-group2">
-                    <div>
-                        
-                        <input type="number" placeholder="Numéro de téléphone" required>
-                    </div>
                     
-                    <div>
-                        
-                        <input type="number" id="Code postal" class="input-text" placeholder="Code postal" required>
-                    </div><br>
-                    <div>
-                        
-                        <input type="text" id="region" class="input-text" placeholder="Region" required>
-                    </div>
-                    <div>
-                        
-                        <input id="adcom" type="text" placeholder="Address complete:" required>
-                    
-                    </div>
-                </div>
-                  
-                
-                
-            </div>
-            
-        </form>
+         
+      
 
-
-        <div class="btnenreg" >
-        <button class="enregis" (click)="scrollup()">Enregistrer</button>
-        </div>
 
     </div>
-
+   
 </body>
+
+  <app-footer></app-footer>
+
 </html>
