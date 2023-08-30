@@ -41,11 +41,11 @@ a{
 
 }
 .logo-img {
-
+    position:static;
     width: 45px;
     height: 44px;
     cursor: pointer;
-    margin-left: 900px;
+    margin-left: 1040px;
   }
   
 
@@ -54,7 +54,7 @@ a{
     color: black;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-left: 1020px;
+    margin-left: 180vh;
   }
   
   .dropdown ul {
