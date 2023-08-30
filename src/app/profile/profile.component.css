@@ -1,78 +1,13 @@
 body{
   background-color: #efefef;
-  height: 100vh;
+  height: 120vh;
   margin-top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   
 }
-/*****************************************************************************************/
-.nav{
-  background-color: white;
-  height: 60px;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 20px;
-  display: flex;
-  align-items:center;
-  justify-content:flex-start;
-  box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
 
-}
-a span{
-  
-  color:rgb(117, 57, 173);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-a{
-  text-decoration: none;
-  color:blueviolet;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.tittle{
-  margin-left: 40px;
-}
-.logo{
-  width: 100px;
-  height: 80px;
-
-}
-.logo-img {
-
-  width: 45px;
-  height: 44px;
-  cursor: pointer;
-  margin-left: 900px;
-}
-
-
-.dropdown {
-  background-color: whitesmoke;
-  color: black;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-left: 1020px;
-}
-
-.dropdown ul {
-  list-style: none;
-  padding: 0;
-}
-
-.dropdown li {
-  cursor: pointer;
-  margin-top: 8px;
-  /*padding: 5px 5px;*/
-  padding-right: 5px;
-  padding-left: 8px;
-  font-size: 15px;
-}
-
-/* .dropdown li:hover {
-  background-color: #ddd;
-}*/
 
 /*******************************************************************************************/
 .container{
@@ -82,81 +17,35 @@ a{
   align-items: flex-start;
 
 }
+.container1{
+background-color: white;
+border-radius: 5px;
+margin-top: 40px;
+height: 575px;
 
-/*********************navbar*****************************************/
-.navoffre{
-  background-color: white;
-  height: 40px;
-  width: 705px;
-  margin-left: 30px;
-  border-radius: 8px;
-  margin-top: 40px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
-.offre{
-  border: none;
-  border-radius: 8px;
-  height: 530px;
-  width: 705px;
-  margin-left: 30px;
-  background-color: white;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-top: 20px;
-}
-.offrebarre{
-  display: grid;
-  height: 40px;
-  grid-template-columns: 414px 50px;
-}
-.offre h5 {
-  margin-left: 25px;
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 10px;
-  }
 
-.navoffre .btn1{
+
+
+#importer-cv {
   height: 40px;
-  color:  #545492;
-  margin-left: 40px;
-  background-color: white;
+  color: white;
+  margin-left: auto; /* Automatically adjust left margin for centering */
+  margin-right: auto; /* Automatically adjust right margin for centering */
+  background-color: #545492;
   border: none;
   cursor: pointer;
   width: 160px;
   font-size: 17px;
-  
-.navoffre .importer-cv{
-  height: 40px;
-  color:  #545492;
-  margin-left: 40px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  width: 160px;
-  font-size: 17px;
+  border-radius: 10px; /* Adding rounded corners */
+  transition: background-color 0.3s ease; /* Adding a smooth color transition on hover */
+}
+#importer-cv:hover {
+  background-color: #6f5ecb; /* Change color on hover */
+}
 
-}
-}
-.navoffre .btn2{
-  height: 40px;
-  margin-left: 40px;
-  background-color: white;
-  color:  #545492;
-  border: none;
-  cursor: pointer;
-  width: 160px;
-  font-size: 17px;
 
-  
 
-}
-.navoffre button:hover{
-  background-color:#9999d4;
-}
-/*******************************************************************************************/
 .card {
   width: 350px; 
   background-color: white;
@@ -206,7 +95,7 @@ a{
   height: 40px;
   width: 150px;
   border: none;
-  background-color: #32325d;
+  background-color: white;
   color: white;
   font-size: 15px
 }
@@ -245,15 +134,6 @@ hr .new1 {
   border-color: #BA68C8;
 }
 
-
-
-
-
-
-
-
-
-
 .labels {
   font-size: 11px;
 }
@@ -283,12 +163,240 @@ hr .new1 {
   border: solid 1px #BA68C8;
 }
 
-.mes-candidature:hover{
-  background: #BA68C8;
-  color: #fff;
+
+/*********************************navbar*********************************/
+.navbar{
+  background-color: white;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
+}
+#btn1{
+  margin-left: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 2px;
+  height: 40px;
+  width: 180px;
+  font-size: 16px;
+  color: rgb(73, 68, 68);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 700ms ease-out;
+
+}
+#btn2{
+  margin-left: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 2px;
+  height: 40px;
+  width: 180px;
+  font-size: 16px;
+  color: rgb(73, 68, 68);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 700ms ease-out;
+}
+#btn3{
+transition: 700ms ease-out;
+margin-left: 30px;
+border: none;
+background-color: blueviolet;border-radius: 2px;
+height: 40px;
+width: 180px;
+font-size: 16px;
+color: white;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+box-shadow: 4px  4px 10px blueviolet;
+}
+
+.tittle a span{
+  
+  color:rgb(117, 57, 173);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle a{
+  font-size: 40px;
+  text-decoration: none;
+  color:blueviolet;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle{
+  margin-left: 40px;
+}
+#btn2:hover,
+#btn1:hover
+{
+transition: background-color 0.3s, box-shadow 0.3s;
+  color:white;
+  box-shadow: 4px  4px 10px blueviolet;
+background-color: rgba(137, 43, 226, 0.795);;
+}
+
+.logo-img {
+  width: 45px;
+  height: 44px;
   cursor: pointer;
-  border: solid 1px #BA68C8;
-  width: 12px; /* Adjust the width as needed */
-  height: 30px; /* Adjust the height as needed */
-  padding: 5px 10px; /* Adjust padding for spacing inside the button */
+  margin-left: 400px;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color:rgb(95, 30, 156);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 179vh;
+  transition: 500ms ease;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown li {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.dropdown li:hover {
+  transform: scale(1.05);
+}
+/********************************************ta7t navbar************************************************/
+
+
+/******************************fooooooter**************************************/
+footer{
+background-color: #333333;
+color: #cccccc;
+display: flex;
+flex-direction: column;
+height: 200px;
+}
+footer .row1{
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 80px;
+border-bottom: 2px solid white;
+
+}
+footer  .row2{
+width: 100%;
+height: 100%;
+
+
+}
+footer .row1 .tittle{
+margin-top: 30px;
+
+
+}
+footer .row1  .tittle h1{
+font-size: 17px;
+color: #ffffff;
+}
+footer .row1  .liste{
+margin-left: 40px;
+display: flex;
+flex-direction: column;
+}
+footer .row1  .liste a{
+cursor: pointer;
+
+font-size: 14px;
+}
+footer .row1  .liste :hover{
+transform: scale(1.1);
+}
+footer  .col1{
+margin-left: 60px;
+}
+footer  .col1 ,
+footer  .col2,
+footer  .col3{
+height: 180px;
+}
+
+footer .row2 .icons{
+color: #ffffff;
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 40px;
+font-size: 20px;
+cursor: pointer;
+
+}
+footer .row2 .icons  i:hover{
+transform: scale(1.1);
+}
+footer .conbtn{
+display: inline-block;
+background-color: blueviolet;
+color: #fff;
+text-decoration: none;
+font-size: 15px;
+font-family: Arial, sans-serif;
+border-radius: 30px;
+transition: background-color 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border:none;
+border-radius: 4px;
+color: #ffffff;
+height: 35px;
+width: 150px;
+}
+footer .conbtn:hover{
+background-color: rgb(56, 22, 88);
+}
+#mes-candidature{
+  height: 40px;
+  color: white;
+  margin-left: auto; /* Automatically adjust left margin for centering */
+  margin-right: auto; /* Automatically adjust right margin for centering */
+  background-color: #545492;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  font-size: 17px;
+  border-radius: 10px; /* Adding rounded corners */
+  transition: background-color 0.3s ease; /* Adding a smooth color transition on hover */
+}
+#mes-candidature:hover {
+  background-color: #6f5ecb; /* Change color on hover */
+}
+#candidature-link{
+  color: white;
+}
+#btn-enregister{
+  height: 40px;
+  color: white;
+  margin-left: auto; /* Automatically adjust left margin for centering */
+  margin-right: auto; /* Automatically adjust right margin for centering */
+  background-color: #545492;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  font-size: 17px;
+  border-radius: 10px; /* Adding rounded corners */
+  transition: background-color 0.3s ease; /* Adding a smooth color transition on hover */
+}
+#btn-enregister:hover {
+  background-color: #6f5ecb; /* Change color on hover */
 }

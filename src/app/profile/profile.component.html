@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div class="nav">
+    <div class="navbar">
         <div class="tittle">
-            <a href="welcomepage"><span>FO</span>RSA</a>
-        </div>
-        <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
-        <div *ngIf="isDropdownOpen" class="dropdown">
-            <ul>
-              <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
-            </ul>
-        </div>
-        
-    </div>
+          <a href="welcomepage"><span>FO</span>RSA</a>
+      </div>
+          <div class="b1"><button id="btn1" routerLink="/home" routerLinkActive="active"><i class="bi bi-house"></i> Acceuil</button></div> 
+          <div class="b2"><button id="btn2" routerLink="" routerLinkActive="active"> <i class="bi bi-border-width"></i> Candidatures</button></div>
+          <div class="b3"><button id="btn3" routerLink="/profile" routerLinkActive="active"><i class="bi bi-person"></i> Profile</button></div>  
+          
+          <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+          <div *ngIf="isDropdownOpen" class="dropdown">
+              <ul>
+                <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+              </ul>
+            </div>
+      </div>
 
     
     <div class="container" id="interface1">
@@ -36,13 +39,12 @@
                    
                    
                    <div class=" d-flex mt-2">
-                    <button class="importer-cv" (click)="importCV()">Importer CV</button>
+                    <button id="importer-cv" (click)="importCV()">Importer CV</button>
 
                    </div> 
                    <div class="d-flex mt-2">
-                    <button >
-                    
-                      <a routerLink="/mes-candidatures" class="mes-candidature">Mes Candidatures</a>
+                    <button id="mes-candidature">
+                      <a id="candidature-link" routerLink="/mes-candidatures" >Mes Candidatures</a>
                     </button>
                   </div>
                   
@@ -60,7 +62,7 @@
         </div>
        
             
-                    <div class="container rounded bg-white mt-4 mb-3">
+                    <div class="container1">
                         <div class="row">
                            
                             <div class="col-md-5 border-right">
@@ -102,10 +104,11 @@
                             </div>      
                     
                             <div class="text-center">
-                                <div class="">
-                                    <span class="border px-3 p-1 add-experience">&nbsp;Enregistrer</span>
+                                <div>
+                                    <span id="btn-enregister" class="border px-3 p-1 add-experience" (click)="showAlert()">Enregistrer</span>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
 

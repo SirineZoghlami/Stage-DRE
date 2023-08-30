@@ -3,6 +3,7 @@ import { OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
 /*import { MesCandidaturesComponent } from '../mes-candidatures/mes-candidatures.component';*/
+import {  Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -46,6 +47,13 @@ export class ProfileComponent {
     }
   }
 
+/**
+ *
+ * importcv
+ *
+ */
+
+
   importCV() {
     const fileInput = document.createElement('input');
     fileInput.type = 'file';
@@ -67,6 +75,30 @@ export class ProfileComponent {
     // Trigger the file input click event
     fileInput.click();
   }
-  
 
-}
+  constructor(private renderer: Renderer2) {}
+
+  showAlert() {
+    const alertMessage = 'Modification enregistrée';
+    const alert = this.renderer.createElement('div');
+    const text = this.renderer.createText(alertMessage);
+    this.renderer.appendChild(alert, text);
+
+    // Styling for the alert
+    this.renderer.setStyle(alert, 'position', 'fixed');
+    this.renderer.setStyle(alert, 'top', '20px');
+    this.renderer.setStyle(alert, 'right', '20px');
+    this.renderer.setStyle(alert, 'background-color', '#f0f0f0');
+    this.renderer.setStyle(alert, 'border', '1px solid #ccc');
+    this.renderer.setStyle(alert, 'padding', '10px');
+    this.renderer.setStyle(alert, 'border-radius', '4px');
+    this.renderer.setStyle(alert, 'box-shadow', '0px 0px 5px rgba(0, 0, 0, 0.2)');
+
+    // Adding the alert to the DOM
+    this.renderer.appendChild(document.body, alert);
+
+    // Automatically remove the alert after a delay
+    setTimeout(() => {
+      this.renderer.removeChild(document.body, alert);
+    }, 3000); // Remove after 3 seconds
+  }}
