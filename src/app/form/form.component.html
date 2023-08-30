@@ -2,58 +2,49 @@
 <html lang="en" >
 <head></head>
 <body>
+
+<div class="navbar">
    <div class="tittle">
       <a href="welcomepage"><span>FO</span>RSA</a>
   </div>
-<div class="navbar">
   <div class="b1"><button id="btn1" routerLink="/loginpage" routerLinkActive="active">Connexion</button></div> 
-  <div class="b3"><button id="btn3"  routerLink="/form" routerLinkActive="active">Créer votre cv </button></div> 
+  <div class="b3"><button id="btn3"  routerLink="/form" routerLinkActive="active">Création du Profile</button></div> 
   <div class="b4"><button id="btn4"  routerLink="/pagecv" routerLinkActive="active">Candidature</button></div>
 
 </div>
 <div class="container">
    <div class="text">
-      <h1>Créer votre cv</h1>
+      <h1>Créer votre Profile</h1>
    </div>
-   <form action="#">
-    <div class="jomla">
+   <div class="jomla">
       <h3>Veuillez remplir votre carrière universitaire</h3>
     </div>
-      <div class="form-row">
+   <form>
+      <div class="content">
+              <div class="form-row">
          <div class="input-data">
             <input type="text" required>
             <div class="underline"></div>
             <label for=""><h1>Etablissement :</h1></label>
           </div>
-        </div>
-
-         <div class="form-row">
-
-         <div class="input-data">
+          <div class="input-data">
             <input type="text" required>
             <div class="underline"></div>
             <label for=""><h1>Type de diplome :</h1></label>
          </div>
-      </div>
-
+        </div>
       <div class="form-row">
          <div class="input-data">
             <input type="text" required>
             <div class="underline"></div>
             <label for=""><h1>Filière du diplome</h1></label>
          </div>
-        </div>
-
-
-         <div class="form-row">
-
          <div class="input-data">
             <input type="text" required>
             <div class="underline"></div>
             <label for=""><h1>Intitulé du diplome</h1></label>
          </div>
-      </div>
-
+        </div>
 
       <div class="form-row">
 
@@ -70,13 +61,16 @@
             <div class="comp"><h1>Compétences</h1></div>
             <div class="competences">
                <ng-select 
+               class="custom-ng-select"
                [items]="options"
                [multiple]="true"
                bindLabel="name"
                bindValue="id"
                [(ngModel)]="selectedOptions"
                placeholder="selectionner"
-               appendTo="body">
+               [style.height]="calculateHeight()"
+               appendTo="body"
+               [style.height]="calculateHeight()">
                <ng-option *ngFor="let option of options" [value]="option">{{ option }}</ng-option>
                </ng-select>
            </div>
@@ -87,6 +81,8 @@
             <button   routerLink="/pagecv" routerLinkActive="active" class="benregistrer">Enregistrer</button>
          </div>
       </div>
+   </div>
+ 
    </form>
    
 </div>

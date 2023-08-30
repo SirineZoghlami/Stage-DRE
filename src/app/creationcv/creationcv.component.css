@@ -65,10 +65,10 @@ label input[type="checkbox"] {
   margin-right: 5px;
 }
 /***************************************************************************************/
-
+/***************************************************************************************************/
 .navbar{
   background-color: white;
-  height: 60px;
+  height: 70px;
   margin-top: 20px;
   display: flex;
   align-items:center;
@@ -76,26 +76,28 @@ label input[type="checkbox"] {
   box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
 }
 #btn1{
-    margin-left: 20px;
+    margin-left: 100px;
     border: none;
     border-radius: 20px;
     background-color:white;
+    border-radius: 5px;
     height: 40px;
-    width: 170px;
+    width: 180px;
     font-size: 16px;
     color:rgb(73, 68, 68);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
-#btn2{
-    margin-left: 30px;
-    border: none;
-    background-color: white;
-    border-radius: 20px;
-    height: 40px;
-    width: 180px;
-    font-size: 16px;
-    color: rgb(73, 68, 68);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+#btn3{
+  margin-left: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 180px;
+  font-size: 16px;
+  color: rgb(73, 68, 68);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #btn4{
   margin-left: 30px;
@@ -110,23 +112,22 @@ label input[type="checkbox"] {
   box-shadow: 4px  4px 10px blueviolet;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-#btn3{
-  margin-left: 30px;
-  border: none;
-  background-color: white;
-  border-radius: 20px;
-  height: 40px;
-  width: 180px;
-  font-size: 16px;
-  color: rgb(73, 68, 68);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-a span{
-    
+
+.tittle a span{
+
+
     color:rgb(117, 57, 173);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-a{
+#btn1:hover,
+#btn4:hover{
+
+  background-color: rgba(137, 43, 226, 0.774);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color:white;
+  box-shadow: 4px  4px 10px blueviolet;
+}
+.tittle a{
     font-size: 40px;
     text-decoration: none;
     color:blueviolet;

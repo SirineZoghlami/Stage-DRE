@@ -5,6 +5,9 @@ body{
     background-color:rgba(212, 212, 212, 0.493);
 }
 .navbar{
+  position: fixed;
+  width: 1290px;
+  z-index: 100;
     background-color: white;
     height: 70px;
     margin-top: 10px;
@@ -121,9 +124,8 @@ body{
   }
   /********************************************ta7t navbar************************************************/
   .wost{
-   
-    background: linear-gradient(60deg,  rgb(200, 167, 231) 20%,white 58% );
-    margin-top: 100px;
+     background: linear-gradient(60deg,  rgb(200, 167, 231) 20%,white 58% );
+    margin-top: 190px;
     padding-top: 20px;
     height: 350px;
     width: 80%;
