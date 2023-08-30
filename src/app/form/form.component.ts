@@ -25,5 +25,16 @@ export class FormComponent {
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
   }
+  selectedOptions: any[] = [];
+  options = [
+    { id: 1, name: 'JAVA' },
+    { id: 2, name: 'CSS' },
+    { id: 3, name: 'PHP' },
+    { id: 4, name: 'PYTHON' },
+    { id: 5, name: 'ANGULAR' },
+    { id: 6, name: 'JAVASCRIPT' },
+    { id: 7, name: 'REACTJS' },
+    { id: 8, name: 'C#' },
+    { id: 9, name: 'C/C++' }]
 
 }

@@ -65,7 +65,15 @@ footer{
     transform: scale(1.1);
   }
   footer .conbtn{
-    background-color: #89a1bf;
+    display: inline-block;
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border:none;
     border-radius: 4px;
     color: #ffffff;
@@ -73,5 +81,6 @@ footer{
     width: 150px;
   }
   footer .conbtn:hover{
-    background-color: #6785aa;
+    background-color: rgb(56, 22, 88);
   }
+  

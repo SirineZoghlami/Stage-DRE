@@ -67,12 +67,19 @@
         
      </div>
       <div class="form-row">
-         <div class="input-data textarea">
-            <textarea rows="8" cols="80" required></textarea>
-            <br />
-            <div class="underline"></div>
-            <label for=""><h1>Compétences</h1></label>
-         </div>
+            <div class="comp"><h1>Compétences</h1></div>
+            <div class="competences">
+               <ng-select 
+               [items]="options"
+               [multiple]="true"
+               bindLabel="name"
+               bindValue="id"
+               [(ngModel)]="selectedOptions"
+               placeholder="selectionner"
+               appendTo="body">
+               <ng-option *ngFor="let option of options" [value]="option">{{ option }}</ng-option>
+               </ng-select>
+           </div>
       </div>
 
       <div class="form-row submit-btn">
@@ -81,6 +88,9 @@
          </div>
       </div>
    </form>
+   
 </div>
 </body>
+<app-footer></app-footer>
+
 </html>
