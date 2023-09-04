@@ -1,19 +1,20 @@
 body{
     height: 200vh;
-    background-color: #f5F5F5;
+    background: linear-gradient(70deg,  rgb(200, 167, 231) 50%,white 58% );
     padding-top: 20px;
     font-family: Arial, sans-serif;
 }
 
 .page-content{
     margin-top: 60px;
+    border-radius: 5px;
     background-color: white;
     width: 80%;
     padding-bottom: 20px;
     padding-top: 50px;
     margin-bottom: 200px;
     margin-left: 120px;
-    box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow:  0  0 8px rgba(0, 0, 0, 0.363); 
 
 }
 .entreprise,
@@ -28,7 +29,10 @@ body{
 {
 color:  #121113;
 font-size: 15px;
-
+}
+.contact i
+{
+color:  rgb(75, 75, 240);
 }
 
 .entreprise h2,
@@ -37,6 +41,8 @@ font-size: 15px;
 {
 color: rgb(102, 28, 102);
 font-size: 20px;
+margin-left: 20px;
+margin-top: 20px;
 }
 .form-group1,
 .form-group2
@@ -75,6 +81,7 @@ box-sizing: border-box;
 .form-group1 input,
 .form-group2 input,
 .form-group3 input{
+
     border-bottom: 1px solid #ccc;
 }
 .form-group1 input :focus,
@@ -97,22 +104,27 @@ width: 600px;
 .form-group1 ::placeholder
 {
 color: #3c4674;
-font-size: 12px;
+font-size: 14px;
+
 }
 #secteur
 {
+height: 30px;
+font-size: 14px;
 width: 290px;
 padding-bottom: 8px;
 margin-left: 20px;
 color: #3c4674;
-font-size: 12px;
+
 }
 #taille
 {
+height: 30px;
+font-size: 14px;
+
 width: 290px;
 padding-bottom: 8px;
 color: #3c4674;
-font-size: 12px;
 }
 
 
@@ -126,7 +138,7 @@ margin-left: 20px;
     background-color:#9053c7;
     border: 1px solid #ccc;
     color: white;
-	height: 40px;
+	  height: 40px;
     width: 100px;
     cursor: pointer;
 }
@@ -152,75 +164,78 @@ margin-left: 20px;
   .enregistrer{
     display: grid;
     grid-template-columns: 110px 100px;
-    margin-left: 280px;
+    margin-left: 380px;
   }
 
-/*******************************/
+
+/***************************NAVBAR************************************************************************/
 .navbar{
-	background-color: white;
-	height: 60px;
-	margin-top: 20px;
-	display: flex;
-	align-items:center;
-	justify-content:flex-start;
-	box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
+  background-color: white;
+  height: 70px;
+  margin-top: 20px;
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  box-shadow:  0  0 3px rgba(0, 0, 0, 0.363);  
+}
+#btn1{
+    margin-left: 100px;
+    border: none;
+    background-color:white;
+    height: 40px;
+    width: 180px;
+    font-size: 16px;
+    color: #9053c7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
-  #btn1{
-	  margin-left: 20px;
-	  border:none;
-	  background-color:white;
-	  height: 40px;
-	  width: 170px;
-	  font-size: 16px;
-	  color:rgb(73, 68, 68);
-	  font-family:Verdana, Geneva, Tahoma, sans-serif;
-	}
-  #btn2{
-	  margin-left: 30px;
-	  border: none;
-	  background-color: white;
-	  border-radius: 5px;
-	  height: 40px;
-	  width: 180px;
-	  font-size: 16px;
-	  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  #btn3{
-	margin-left: 30px;
-	border: none;
-	background-color: blueviolet;
-	border-radius: 5px;
-	height: 40px;
-	width: 180px;
-	font-size: 16px;
-	transition: background-color 0.3s, box-shadow 0.3s;
-	  color:white;
-	  box-shadow: 4px  4px 10px blueviolet;
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  #btn4{
-	margin-left: 30px;
-	border: none;
-	background-color: white;
-	border-radius: 5px;
-	height: 40px;
-	width: 180px;
-	font-size: 16px;
-	color: rgb(73, 68, 68);
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  a{
-	font-size: 40px;
-	text-decoration: none;
-	color:blueviolet;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  a span{
-	  
-	  color:rgb(117, 57, 173);
-	  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .tittle{
-	  margin-left: 40px;
-  }
+
+#btn4{
+  margin-left: 30px;
+  border: none;
+  background-color: white;
+  height: 40px;
+  width: 180px;
+  font-size: 16px;
+  color: #9053c7;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn3{
+  margin-left: 30px;
+  border: none;
+  background-color: blueviolet;
+  border-radius: 5px;
+  height: 40px;
+  width: 180px;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color:white;
+  box-shadow: 4px  4px 10px blueviolet;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tittle a span{
+
+
+    color:rgb(117, 57, 173);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btn1:hover,
+#btn4:hover{
+  border-radius: 5px;
+  background-color: rgba(137, 43, 226, 0.774);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color:white;
+  box-shadow: 4px  4px 10px blueviolet;
+}
+.tittle a{
+    font-size: 40px;
+    text-decoration: none;
+    color:blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle{
+    margin-left: 40px;
+}
+
+/************************************************************************************************************/

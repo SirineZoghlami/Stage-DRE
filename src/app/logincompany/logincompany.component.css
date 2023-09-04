@@ -151,7 +151,7 @@ iframe {
 }
 
 .wrap-login100 {
-  margin-left: 400px;
+  margin-left: 450px;
   width: 400px;
   background: #fff;
   border-radius: 40px;
@@ -465,6 +465,12 @@ iframe {
 }
 .buttons .b2 button:hover{
   background-color:#ecebeb
+}
+.buttons .b3 button:hover {
+  background-color:#ecebeb
+}
+.buttons .b4 button:hover{
+  background-color:#652999;
 }
 i{
   font-size: 30px;

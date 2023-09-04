@@ -14,12 +14,22 @@
   </div>
   <div class="container">
     <h1>Formulaire de candidature</h1>
-    <form action="#" method="post">
-      <label for="nom">Nom complet</label>
+    <form>
+      <div class="form-row">
+        <div>
+      <label for="nom">Nom</label>
       <input type="text" id="nom" name="nom" required>
-
+      
+      </div>
+      <div>
+      <label for="nom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required>
+      </div>
+      <div>
       <label for="adresse">Adresse complète</label>
       <input type="text" id="adresse" name="adresse" required>
+      </div>
+      </div>
 
       <label for="experience">Expérience professionnelle</label>
       <textarea id="experience" name="experience" rows="4" required></textarea>
@@ -40,8 +50,9 @@
         <input type="checkbox" name="consentement" required>
         J'accepte que mes données personnelles soient collectées et traitées dans le cadre de ma candidature.
       </label>
-
+      <div class="button-classe">
       <button type="submit" routerLink="/home" routerLinkActive="active">Soumettre la candidature</button>
+    </div>
     </form>
   </div>
 </body>
