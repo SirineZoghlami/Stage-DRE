@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgModule } from '@angular/core';
+import { OfferService } from '../offer.service';
+
 @Component({
   selector: 'app-offre',
   templateUrl: './offre.component.html',
@@ -70,4 +72,16 @@ export class OffreComponent {
     { id: 9, name: 'C/C++' }
   ]
   selectedOptions: any[] = [];
-}
+  /****************************** */
+
+  }
+
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 
+
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
@@ -24,6 +25,7 @@ import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
 import { FooterComponent } from './footer/footer.component';
 import { MesCandidaturesComponent } from './mes-candidatures/mes-candidatures.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [

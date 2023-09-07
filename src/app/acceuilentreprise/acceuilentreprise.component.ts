@@ -54,9 +54,4 @@ export class AcceuilentrepriseComponent{
       this.activeButton1 = null; // Toggle off if the same button is clicked again
     }
   }
-  /****************************************************** */
-  gestionoffre = true;
-  togglegestion() {
-    this.gestionoffre = true;
-  }
 }

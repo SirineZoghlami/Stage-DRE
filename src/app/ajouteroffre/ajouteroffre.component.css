@@ -35,24 +35,148 @@
 }
 /**************/
 body{
+  /*background-color: #efefef;*/
+  background-color: #d9d9dd;
   height: 250vh;
-  background: linear-gradient(70deg,  rgb(200, 167, 231) 50%,white 58% );
-  padding-top: 20px;
-  font-family: Arial, sans-serif;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
 }
+/*******nav****/
+.navbar{
+  width: 100%;
+    background-color: #524582;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    box-shadow:  0 10px 8px rgba(0, 0, 0, 0.1); 
+}
+.buttonbar{
+  display: flex;
+  
+
+}
+#btn1{
+    margin-left: 60px;
+    border: none;
+    border-radius: 2px;
+    background-color:rgba(0, 0, 0, 0.137);
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    width: 170px;
+    font-size: 14px;
+    color: white;
+  
+  }
+#btn2{
+    margin-left: 30px;
+    border: none;
+    
+    background-color:rgba(0, 0, 0, 0.137);
+    border-radius: 2px;
+    height: 40px;
+    width: 180px;
+    font-size: 14px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+      transition: 700ms ease-out;
+}
+#btn3{
+  transition: 700ms ease-out;
+  margin-left: 30px;
+  border: none;
+  background-color: blueviolet;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 4px  4px 10px blueviolet;
+  border-radius: 2px;
+  height: 40px;
+  width: 180px;
+  font-size: 14px;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tittle a span{
+    
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle a{
+    font-size: 40px;
+    text-decoration: none;
+    color:rgb(219, 216, 216);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle{
+    margin-left: 40px;
+}
+#btn3:hover,
+#btn2:hover
+{
+  transition: background-color 0.3s, box-shadow 0.3s;
+    color:white;
+    box-shadow: 4px  4px 10px blueviolet;
+  background-color: rgba(137, 43, 226, 0.795);;
+}
+
+.logo-img {
+    width: 45px;
+    height: 44px;
+    cursor: pointer;
+    margin-left: 1100px;
+  }
+  
+
+  .dropdown {
+    position: absolute;
+    top: 50%;
+    left: 50;
+    background-color:white;
+    color:rgb(187, 41, 41);
+    font-weight: 600;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 179vh;
+    transition: 500ms ease;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    cursor: pointer;
+    margin-top: 3px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  
+  .dropdown li:hover {
+    transform: scale(1.05);
+  }
+
+
+
+
+/*******************************************************************************************/
 
 h5{ 
   font-family: Arial, sans-serif;
   font-size:  15px;}
 
 .container{
-  margin-top: 60px;
   border-radius:5px;
   margin-left: 120px;
-  width: 80%;
+  width: 90%;
   height: 170vh;
   padding-left: 50px;
-
   padding-bottom: 20px;
   padding-top: 50px;
   background-color:white;
@@ -217,71 +341,4 @@ font-size: 22px;
   border-bottom: 1px solid #ccc;
 }
 /********************************************************************/
-.nav{
-    background-color: white;
-    height: 60px;
-    margin-top: 10px;
-    display: flex;
-    align-items:center;
-    justify-content:flex-start;
-    box-shadow:  0  0 3px rgba(0, 0, 0, 0.363);  
-
-}
-.dropdown a {
-    text-decoration: none;
-}
-.tittle a span{
-    
-    color:rgb(117, 57, 173);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.tittle  a{
-    font-size: 40px;
-    text-decoration: none;
-    color:blueviolet;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.tittle{
-    margin-left: 40px;
-}
-.logo{
-    width: 100px;
-    height: 80px;
-
-}
-.logo-img {
-  position:static;
-  width: 45px;
-  height: 44px;
-  cursor: pointer;
-  margin-left: 1040px;
-}
-
-
-.dropdown {
-  background-color: whitesmoke;
-  color: black;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-left: 180vh;
-}
-
-  #profile{
-    margin-left: 26px;
-    margin-top: 10px;
-
-}
-  .dropdown ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .dropdown li {
-    cursor: pointer;
-    margin-top: 8px;
-    /*padding: 5px 5px;*/
-    padding-right: 5px;
-    padding-left: 8px;
-    font-size: 15px;
-  }
 

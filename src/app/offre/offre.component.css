@@ -182,7 +182,26 @@ text-align: center;
     background-color: white; 
     color: black 
   }
+  .title1 {
+    display: flex;
+  }
+  .title1 button{
+    text-align: center;
+    margin-left: 750px;
+    color: white;
+    background-color: #8944c5;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    height: 45px;
+    box-shadow: 0px  0px 10px blueviolet;
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+  .title1 i {
+    font-size: 17px;
 
+  }
 .title2{
   margin-top: 40px;
 }

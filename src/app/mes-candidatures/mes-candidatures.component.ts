@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./mes-candidatures.component.css']
 })
 export class MesCandidaturesComponent {
+  isDropdownOpen: boolean = false;
 
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
 }

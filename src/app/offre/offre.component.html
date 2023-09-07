@@ -16,18 +16,20 @@
 <div class="container">
     <div class="title1">
         <h3>Détails de l'offre</h3>
+        <button  routerLink="/entreprise">Passer <i id="in" class="bi bi-arrow-right"></i></button>
     </div>
+    
         <div class="row1">
             <div class="job">
                 <h5>Selectionner emploi:</h5>
-                <ng-select [items]="jobTitles" placeholder="Selectionner emploi" appendTo="body" [(ngModel)]="selected" [virtualScroll]="true" id="jobSelect">
+                <ng-select [items]="jobTitles" placeholder="Selectionner emploi" appendTo="body" [(ngModel)]="selected" [virtualScroll]="true"  id="jobSelect">
                 <ng-option *ngFor="let job of jobTitles" [value]="job">{{ job }}</ng-option>
                 </ng-select>
             </div>
             
             <div class="titre">
                 <h5>Titre personalisé de poste</h5>
-                <input type="text" id="inp1" class="input-text" placeholder="Titre personalisé de poste:" required>
+                <input  type="text" id="inp1" class="input-text" placeholder="Titre personalisé de poste:" required>
             </div>
             <div class="autre">
                 <h5>Autre emploi:</h5>

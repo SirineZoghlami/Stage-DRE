@@ -14,9 +14,11 @@ import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentrepris
 import { ContactusComponent } from './contactus/contactus.component';
 import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
 import { MesCandidaturesComponent } from './mes-candidatures/mes-candidatures.component'; 
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {path:'', component : WelcomepageComponent  },
+
 {path: 'form', component: FormComponent  },
  {path:'loginpage', component : LoginpageComponent },
  {path:'welcomepage', component : WelcomepageComponent  },
@@ -30,6 +32,7 @@ const routes: Routes = [
  {path:'contactus', component : ContactusComponent  },
  {path:'ajouteoffre', component :AjouteroffreComponent   },
  { path: 'mes-candidatures', component: MesCandidaturesComponent },
+
 
 
 ];

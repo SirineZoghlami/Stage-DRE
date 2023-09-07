@@ -3,21 +3,25 @@
 
 </head>
 <body>
-    <div class="nav">
+    <div class="navbar">
         <div class="tittle">
-            <a href="welcomepage"><span>FO</span>RSA</a>
+          <a href="welcomepage"><span>FO</span>RSA</a>
+          <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
+          <div *ngIf="isDropdownOpen" class="dropdown">
+              <ul>
+                <li><i class="bi bi-box-arrow-left"></i> Se déconnecter</li>
+              </ul>
+            </div>
         </div>
-        <img src="assets/images/user.png" (click)="toggleDropdown()" class="logo-img">
-        <div *ngIf="isDropdownOpen" class="dropdown">
-            <ul>
-                <li id="profile"><a href="/entreprise"><i class="bi bi-person-circle"></i> Profile</a></li>
-
-              <li><a href="#"><i class="bi bi-box-arrow-left"></i> Se déconnecter</a></li>
-            </ul>
+      <div class="buttonbar">
+          <div class="b1"><button id="btn1" routerLink="/entreprise" routerLinkActive="active"><i class="bi bi-house"></i> Profile</button></div> 
+          
+          
+          <div class="b3"><button id="btn3" routerLink="/ajouteoffre" routerLinkActive="active"><i class="bi bi-person"></i> Ajouter un offre</button></div>  
         </div>
-        
-    </div>
-
+          
+      </div>
+      <br><br>
 <div class="container">
     <div class="title1">
         <h3>Détails de l'offre</h3>
@@ -122,7 +126,7 @@
                 </div>
             </div>
                 <div class="buttons">
-                    <button id="b1" routerLink="/espacerecruteur" routerLinkActive="active"> Annuler</button>
+                    <button id="b1" routerLink="/entreprise" routerLinkActive="active"> Annuler</button>
                     <button id="b2" routerLink="/entreprise" routerLinkActive="active" >Enregistrer</button>
                 </div>
 
