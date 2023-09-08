@@ -141,7 +141,6 @@ iframe {
 .container-login100 {
   width: 100%;  
   min-height: 100vh;
-  
   padding: 15px;
   background: #9053c7;
   background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
@@ -162,6 +161,7 @@ iframe {
   padding-left: 50px;
   padding-top: 20px;
   padding-bottom:20px;
+  margin-top: 30px;
   
 }
 

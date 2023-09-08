@@ -14,7 +14,7 @@ import { AcceuilentrepriseComponent } from './acceuilentreprise/acceuilentrepris
 import { ContactusComponent } from './contactus/contactus.component';
 import { AjouteroffreComponent } from './ajouteroffre/ajouteroffre.component';
 import { MesCandidaturesComponent } from './mes-candidatures/mes-candidatures.component'; 
-import { TestComponent } from './test/test.component';
+
 
 const routes: Routes = [
   {path:'', component : WelcomepageComponent  },

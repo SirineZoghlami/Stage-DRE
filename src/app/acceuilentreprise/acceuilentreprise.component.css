@@ -1,5 +1,4 @@
 body{
-    /*background-color: #efefef;*/
     background-color: #d9d9dd;
     height: 300vh;
     margin-top: 0;
@@ -12,7 +11,7 @@ body{
   }
   /*******nav****/
   .navbar{
-    width: 100%;
+      width: 100%;
       background-color: #524582;
       height: 170px;
       display: flex;
