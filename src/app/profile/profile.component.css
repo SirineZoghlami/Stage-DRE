@@ -1,6 +1,6 @@
 body{
   background-color: #efefef;
-  height: 120vh;
+  height: 150vh;
   margin-top: 0;
   width: 100%;
   display: flex;
@@ -21,28 +21,27 @@ body{
 background-color: white;
 border-radius: 5px;
 margin-top: 40px;
-height: 575
-px;
+height: 575px;
 
 }
 
 
 
-#importer-cv {
+.importer-cv {
   height: 40px;
   color: white;
   margin-left: auto; /* Automatically adjust left margin for centering */
   margin-right: auto; /* Automatically adjust right margin for centering */
-  background-color: #545492;
+  background-color: #6f5ecb;
   border: none;
   cursor: pointer;
   width: 160px;
   font-size: 17px;
-  border-radius: 10px; /* Adding rounded corners */
+  border-radius: 5px; /* Adding rounded corners */
   transition: background-color 0.3s ease; /* Adding a smooth color transition on hover */
 }
-#importer-cv:hover {
-  background-color: #6f5ecb; /* Change color on hover */
+.importer-cv:hover {
+  background-color: #382a83; /* Change color on hover */
 }
 
 
@@ -127,8 +126,13 @@ hr .new1 {
   background-color: #ccc
 }
 /**********************************************modifier le profil**************************************************************************/
-
-
+.titremodifier h2{
+  font-size: 21px;
+  color:#6f5ecb;
+}
+.contenu{
+  padding: 20px;
+}
 
 .form-control:focus {
   box-shadow: none;
@@ -136,7 +140,9 @@ hr .new1 {
 }
 
 .labels {
-  font-size: 11px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .add-experience:hover {
@@ -155,13 +161,6 @@ hr .new1 {
   padding: 10px;
   border: 1px solid #ccc;
   background-color: #f2f2f2;
-}
-
-.importer-cv:hover{
-  background: #BA68C8;
-  color: #fff;
-  cursor: pointer;
-  border: solid 1px #BA68C8;
 }
 
 
@@ -370,38 +369,37 @@ width: 150px;
 footer .conbtn:hover{
 background-color: rgb(56, 22, 88);
 }
-#mes-candidature{
+.mes-candidature{
   height: 40px;
   color: white;
-  margin-left: auto; /* Automatically adjust left margin for centering */
-  margin-right: auto; /* Automatically adjust right margin for centering */
-  background-color: #545492;
+  margin-left: auto; 
+  margin-right: auto;
+  background-color:#6f5ecb;
   border: none;
   cursor: pointer;
   width: 160px;
   font-size: 17px;
-  border-radius: 10px; /* Adding rounded corners */
+  border-radius: 5px; /* Adding rounded corners */
   transition: background-color 0.3s ease; /* Adding a smooth color transition on hover */
 }
-#mes-candidature:hover {
-  background-color: #6f5ecb; /* Change color on hover */
+.mes-candidature:hover {
+  background-color: #3e2f8f; /* Change color on hover */
 }
 #candidature-link{
   color: white;
 }
-#btn-enregister{
+.btn-enregister{
   height: 40px;
+  margin-top: 40px;
   color: white;
-  margin-left: auto; /* Automatically adjust left margin for centering */
-  margin-right: auto; /* Automatically adjust right margin for centering */
-  background-color: #545492;
+  background-color:#6f5ecb;
   border: none;
   cursor: pointer;
-  width: 160px;
+  width: 120px;
   font-size: 17px;
-  border-radius: 10px; /* Adding rounded corners */
-  transition: background-color 0.3s ease; /* Adding a smooth color transition on hover */
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;
 }
-#btn-enregister:hover {
-  background-color: #6f5ecb; /* Change color on hover */
+.btn-enregister:hover {
+  background-color: #352780; 
 }

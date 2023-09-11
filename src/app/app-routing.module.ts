@@ -18,7 +18,6 @@ import { MesCandidaturesComponent } from './mes-candidatures/mes-candidatures.co
 
 const routes: Routes = [
   {path:'', component : WelcomepageComponent  },
-
 {path: 'form', component: FormComponent  },
  {path:'loginpage', component : LoginpageComponent },
  {path:'welcomepage', component : WelcomepageComponent  },

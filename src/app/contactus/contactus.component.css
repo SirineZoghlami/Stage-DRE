@@ -5,25 +5,90 @@
   
 }
 body{
-  height: 200vh;
+  height: 100vh;
   width: 100%;
-  padding-top: 20px;
   background-color:#f5F5F5;
   font-family: 'Poppins', sans-serif;
+
   
+}
+.nav{
+  text-decoration:underline;
+
+}
+.nav i{
+  font-size: 18px;
+}
+.acceuil{
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #f5F5F5;
+  border: none;
+  color: #6a1c8f;
+  transition: 200ms ease-in-out;
+
+}
+.acceuil:hover, i:hover{
+  transform: scale(1.05);
+}
+.page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.left{
+  width: 400px;
+  height: 540px;
+  background: #fff;
+  margin-left: 150px;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
 }
 .container{
   width: 600px;
   height: 540px;
   max-width: 800px;
   background: #fff;
-  margin-left: 320px;
-  margin-top: 70px;
+  margin-left: 20px;
+  margin-top: 30px;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
-.container .text {
+.left p {
+  margin-top: 30px;
+  font-size: 13px;
+  color: rgb(153, 145, 145);
+}
+.left h4{
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color:blueviolet;
+}
+.left h6{
+
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color:blueviolet;
+}
+.icons{
+  margin-top: 40px;
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(84, 84, 179);
+
+}
+.icons  i:hover{
+  transform: scale(1.1);
 }
 .container .text h1{
   text-align: center;
